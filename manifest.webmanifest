@@ -1,0 +1,21 @@
+{
+  "name": "BŪR FEST ¡El Parche!",
+  "short_name": "BŪR FEST",
+  "description": "Boletas, marcas participantes, votaciones y preinscripciones de BŪR FEST.",
+  "lang": "es-CO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#74C7E0",
+  "theme_color": "#74C7E0",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Mis boletas", "url": "./#mi-burfest" },
+    { "name": "Marcas", "url": "./#marcas" }
+  ]
+}

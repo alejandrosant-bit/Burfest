@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BŪR FEST ¡El Parche! · Festival de Hamburguesas</title>
+  <meta name="description" content="BŪR FEST ¡El Parche!: el festival de hamburguesas en sitio más grande de Colombia. 16 de las mejores hamburgueserías. Ingreso gratuito con registro, vota por tu favorita y preinscribe tu marca.">
+  <meta name="theme-color" content="#74C7E0">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Open Graph: así se ve el link al compartirlo por WhatsApp / Instagram -->
+  <meta property="og:title" content="BŪR FEST ¡El Parche! llega a Bogotá 🍔">
+  <meta property="og:description" content="16 de las mejores hamburgueserías. Ingreso gratuito con registro. 20, 21 y 22 de noviembre.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="demo-ribbon" id="demoRibbon" hidden>Propuesta · contenido de ejemplo</div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="topbar" id="topbar">
+    <a href="#inicio" class="brand" aria-label="BŪR FEST inicio">
+      <span class="brand-bur">BŪR</span><span class="brand-fest">FEST!</span>
+    </a>
+    <nav class="topnav" aria-label="Principal">
+      <a href="#que-es">Qué es</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#boletas">Boletas</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#participa">Participa</a>
+      <a href="#mi-burfest">Mi BŪR FEST</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="btn btn-ghost btn-sm" id="installBtn" hidden>Instalar app</button>
+      <a href="#boletas" class="btn btn-yellow btn-sm">Regístrate gratis</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="awning" aria-hidden="true"></div>
+      <svg class="cloud c1" viewBox="0 0 120 60" aria-hidden="true"><path d="M20 50a16 16 0 0 1 4-31 22 22 0 0 1 40-8 18 18 0 0 1 30 10 15 15 0 0 1 6 29z"/></svg>
+      <svg class="cloud c2" viewBox="0 0 120 60" aria-hidden="true"><path d="M20 50a16 16 0 0 1 4-31 22 22 0 0 1 40-8 18 18 0 0 1 30 10 15 15 0 0 1 6 29z"/></svg>
+      <span class="sparkle sp1" aria-hidden="true">✦</span>
+      <span class="sparkle sp2" aria-hidden="true">✦</span>
+      <span class="sparkle sp3" aria-hidden="true">✦</span>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="logo-big" aria-hidden="true">
+            <span class="lb-bur">BŪR</span>
+            <span class="lb-fest">FEST<i>!</i></span>
+            <span class="lb-parche">¡El parche!</span>
+          </div>
+          <h1 class="hero-title">Somos el festival de hamburguesas <mark>en sitio más grande de Colombia</mark></h1>
+          <p class="hero-sub">Donde participan <b>16 de las mejores hamburgueserías</b>. Tú pruebas, tú votas, tú decides quién se lleva la corona.</p>
+
+          <div class="hero-meta">
+            <span class="pill pill-pink">Ingreso gratuito con registro</span>
+            <span class="pill pill-white">📅 <span id="heroDates">20, 21 y 22 de noviembre</span> · Bogotá</span>
+          </div>
+
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div><b data-cd="d">00</b><span>días</span></div>
+            <div><b data-cd="h">00</b><span>horas</span></div>
+            <div><b data-cd="m">00</b><span>min</span></div>
+            <div><b data-cd="s">00</b><span>seg</span></div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#boletas" class="btn btn-yellow btn-lg">Saca tu boleta gratis</a>
+            <a href="#participa" class="btn btn-white btn-lg">Inscribe tu hamburguesería</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-burger" id="heroBurger"></div>
+          <div class="sticker s1">¡VOTA!</div>
+          <div class="sticker s2">16 MARCAS</div>
+          <div class="sticker s3">3 DÍAS</div>
+        </div>
+      </div>
+      <!-- Bogotá ilustrada: cerros orientales, Monserrate y torres -->
+      <svg class="skyline" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true" stroke="#1B1B1F" stroke-width="2.5" stroke-linejoin="round">
+        <path d="M0 150 C120 60 220 40 330 95 C420 140 470 30 600 20 C700 14 760 90 860 110 C960 130 1040 40 1160 50 C1280 60 1360 120 1440 100 V240 H0z" fill="#5DAA4E"/>
+        <path d="M0 190 C140 130 260 120 380 150 C520 185 600 120 760 130 C900 140 980 180 1120 150 C1250 125 1360 160 1440 150 V240 H0z" fill="#7BC46A"/>
+        <g transform="translate(578 -6)"><rect x="0" y="12" width="40" height="22" fill="#FFF9EC"/><path d="M-4 14 L20 0 L44 14z" fill="#E94E3C"/><rect x="14" y="-14" width="12" height="26" fill="#FFF9EC"/><path d="M12 -14 L20 -24 L28 -14z" fill="#E94E3C"/></g>
+        <g fill="#FFF9EC">
+          <rect x="140" y="150" width="54" height="90" fill="#F6BED7"/><rect x="200" y="120" width="40" height="120" fill="#FFDC4E"/>
+          <rect x="250" y="165" width="60" height="75" fill="#A8DCEC"/><rect x="320" y="140" width="34" height="100"/>
+          <rect x="430" y="170" width="70" height="70" fill="#EC8DB8"/><rect x="510" y="150" width="44" height="90" fill="#A8DCEC"/>
+          <rect x="680" y="60" width="60" height="180" fill="#E94E3C"/><path d="M680 60 L710 40 L740 60z" fill="#E94E3C"/>
+          <rect x="752" y="90" width="38" height="150" fill="#A8DCEC"/><rect x="798" y="90" width="38" height="150" fill="#A8DCEC"/>
+          <rect x="850" y="150" width="56" height="90" fill="#FFDC4E"/><rect x="916" y="130" width="40" height="110"/>
+          <rect x="1040" y="160" width="64" height="80" fill="#F6BED7"/><rect x="1114" y="125" width="44" height="115" fill="#FFDC4E"/>
+          <rect x="1168" y="170" width="70" height="70" fill="#A8DCEC"/><rect x="1250" y="145" width="40" height="95"/>
+          <rect x="1300" y="175" width="60" height="65" fill="#EC8DB8"/>
+        </g>
+        <g stroke="none" fill="#1B1B1F" opacity=".75">
+          <rect x="690" y="80" width="40" height="4"/><rect x="690" y="100" width="40" height="4"/><rect x="690" y="120" width="40" height="4"/><rect x="690" y="140" width="40" height="4"/><rect x="690" y="160" width="40" height="4"/><rect x="690" y="180" width="40" height="4"/><rect x="690" y="200" width="40" height="4"/>
+          <rect x="760" y="104" width="8" height="10"/><rect x="774" y="104" width="8" height="10"/><rect x="806" y="104" width="8" height="10"/><rect x="820" y="104" width="8" height="10"/><rect x="760" y="130" width="8" height="10"/><rect x="774" y="130" width="8" height="10"/><rect x="806" y="130" width="8" height="10"/><rect x="820" y="130" width="8" height="10"/>
+          <rect x="210" y="136" width="8" height="10"/><rect x="224" y="136" width="8" height="10"/><rect x="210" y="160" width="8" height="10"/><rect x="224" y="160" width="8" height="10"/>
+          <rect x="1124" y="140" width="8" height="10"/><rect x="1140" y="140" width="8" height="10"/><rect x="1124" y="164" width="8" height="10"/><rect x="1140" y="164" width="8" height="10"/>
+        </g>
+      </svg>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>SMASH</span><span>✦</span><span>DOBLE CHEDDAR</span><span>✦</span><span>BBQ</span><span>✦</span><span>PICANTE</span><span>✦</span><span>VEGGIE</span><span>✦</span><span>COLOMBIANA</span><span>✦</span><span>¡EL PARCHE!</span><span>✦</span>
+          <span>SMASH</span><span>✦</span><span>DOBLE CHEDDAR</span><span>✦</span><span>BBQ</span><span>✦</span><span>PICANTE</span><span>✦</span><span>VEGGIE</span><span>✦</span><span>COLOMBIANA</span><span>✦</span><span>¡EL PARCHE!</span><span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUÉ ES ============ -->
+    <section class="section section-cream" id="que-es">
+      <div class="wrap">
+        <p class="kicker">¿Qué es BŪR FEST?</p>
+        <h2 class="h2">Un parche. <mark>16 hamburgueserías.</mark> Una sola corona.</h2>
+        <div class="about-grid">
+          <p class="lead">BŪR FEST reúne en un mismo lugar a las hamburgueserías más brutales del país, cada una con su mejor receta, para que tú y tu parche las prueben y voten. Música en vivo, cerveza fría, juegos y miles de personas eligiendo a la mejor hamburguesa.</p>
+          <div class="stats">
+            <div class="stat st-yellow"><b data-count="16">0</b><span>hamburgueserías</span></div>
+            <div class="stat st-pink"><b data-count="3">0</b><span>días de festival</span></div>
+            <div class="stat st-sky"><b>$0</b><span>ingreso con registro</span></div>
+            <div class="stat st-white"><b>1</b><span>campeona</span></div>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-n">01</span>
+            <h3>Regístrate</h3>
+            <p>Gratis y en 30 segundos. Tu boleta con QR llega al correo y queda guardada en la web.</p>
+          </article>
+          <article class="step">
+            <span class="step-n">02</span>
+            <h3>Arma tu ruta</h3>
+            <p>Conoce las 16 marcas, guarda tus favoritas y planea qué probar primero.</p>
+          </article>
+          <article class="step">
+            <span class="step-n">03</span>
+            <h3>Prueba y vota</h3>
+            <p>Califica cada hamburguesa desde tu celular. El ranking se mueve en vivo.</p>
+          </article>
+          <article class="step">
+            <span class="step-n">04</span>
+            <h3>Corona a la mejor</h3>
+            <p>El último día anunciamos la hamburguesa campeona de BŪR FEST.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDICIONES ============ -->
+    <section class="section section-pink" id="ediciones">
+      <div class="wrap">
+        <p class="kicker">Ediciones</p>
+        <h2 class="h2">El parche viaja por Colombia</h2>
+        <div class="events" id="eventsList"></div>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS / HAMBURGUESAS ============ -->
+    <section class="section section-sky" id="marcas">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Marcas participantes</p>
+            <h2 class="h2">Las que compiten</h2>
+          </div>
+          <label class="select">
+            <span class="sr-only">Edición</span>
+            <select id="eventFilter"></select>
+          </label>
+        </div>
+
+        <div class="filters" id="tagFilters" role="toolbar" aria-label="Filtrar hamburguesas"></div>
+        <div class="search">
+          <input type="search" id="burgerSearch" placeholder="Busca por nombre, marca o ingrediente…" aria-label="Buscar hamburguesa">
+        </div>
+
+        <div class="burger-grid" id="burgerGrid"></div>
+        <p class="empty" id="burgerEmpty" hidden>No encontramos hamburguesas con esos filtros.</p>
+
+        <div class="ranking" id="ranking">
+          <div class="ranking-head">
+            <h3>Ranking en vivo <span class="live">● EN VIVO</span></h3>
+            <p>Basado en los votos del público. Se actualiza durante el festival.</p>
+          </div>
+          <ol class="ranking-list" id="rankingList"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOLETAS ============ -->
+    <section class="section section-yellow" id="boletas">
+      <div class="wrap">
+        <p class="kicker">Boletería oficial</p>
+        <h2 class="h2">Saca tu boleta</h2>
+        <p class="lead narrow">El ingreso es <b>gratis con registro</b>. Si quieres saltarte la fila o llegar con todo resuelto, mira los pases. Pago seguro con tarjeta, PSE, Nequi o Daviplata.</p>
+        <div class="tickets" id="ticketsList"></div>
+
+        <div class="giveaway">
+          <div class="gw-tickets" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="gw-copy">
+            <p class="kicker">Sorteo</p>
+            <h3 id="gwTitle">Esta boleta no se compra, <mark>se gana</mark></h3>
+            <ol id="gwSteps"></ol>
+            <a class="btn btn-dark" id="gwLink" href="#" target="_blank" rel="noopener">Participar en Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN + HORARIOS ============ -->
+    <section class="section section-cream" id="ubicacion">
+      <div class="wrap">
+        <p class="kicker">Ubicación y horarios</p>
+        <h2 class="h2">¿Dónde y cuándo?</h2>
+        <div class="where">
+          <div class="map-card">
+            <div class="map" aria-hidden="true">
+              <svg viewBox="0 0 400 260"><path d="M0 70 C80 50 140 110 220 80 S360 40 400 60" /><path d="M0 170 C90 150 160 210 250 180 S350 150 400 170" /><path d="M120 0 C110 80 150 160 130 260" /><path d="M290 0 C300 90 270 170 300 260" /></svg>
+              <div class="pin"><svg viewBox="0 0 24 32"><path d="M12 0a12 12 0 0 1 12 12c0 9-12 20-12 20S0 21 0 12A12 12 0 0 1 12 0z"/><circle cx="12" cy="12" r="5" fill="#fff"/></svg></div>
+            </div>
+            <div class="map-info">
+              <h3 id="venueName">Lugar por confirmar</h3>
+              <p>Bogotá · <span id="venueDates">20, 21 y 22 de noviembre</span></p>
+              <div class="map-actions">
+                <a class="btn btn-dark btn-sm" href="#" id="mapsLink" target="_blank" rel="noopener">Cómo llegar</a>
+                <button class="btn btn-white btn-sm" id="calBtn">Agregar al calendario</button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule">
+            <h3>Horarios</h3>
+            <ul id="scheduleList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREINSCRIPCIÓN ============ -->
+    <section class="section section-sky" id="participa">
+      <div class="wrap participate">
+        <div class="participate-copy">
+          <p class="kicker">Hamburgueserías</p>
+          <h2 class="h2">¿Tienes la mejor hamburguesa de Bogotá? <mark>Demuéstralo.</mark></h2>
+          <p class="lead">Preinscribe tu marca para BŪR FEST Bogotá. Solo hay <b>16 cupos</b> y la selección la hace el comité del festival.</p>
+          <ul class="checklist">
+            <li>Stand en el festival con miles de visitantes</li>
+            <li>Visibilidad en la web y las redes de BŪR FEST</li>
+            <li>Votación y ranking en vivo de tu hamburguesa</li>
+            <li>Reporte de votos y datos al cierre del evento</li>
+          </ul>
+        </div>
+
+        <form class="form" id="preForm" novalidate>
+          <h3>Preinscripción de participantes</h3>
+          <div class="field-row">
+            <label class="field"><span>Nombre de la hamburguesería *</span><input name="restaurante" required autocomplete="organization"></label>
+            <label class="field"><span>NIT o C.C.</span><input name="nit" inputmode="numeric"></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Persona de contacto *</span><input name="contacto" required autocomplete="name"></label>
+            <label class="field"><span>Celular / WhatsApp *</span><input name="celular" required type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+ ]{7,15}"></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Correo *</span><input name="correo" required type="email" autocomplete="email"></label>
+            <label class="field"><span>Instagram de la marca *</span><input name="instagram" required placeholder="@tumarca"></label>
+          </div>
+          <div class="field-row">
+            <label class="field"><span>Edición *</span><select name="evento" id="formEvent" required></select></label>
+            <label class="field"><span>Categoría de la hamburguesa *</span><select name="categoria" id="formCategory" required></select></label>
+          </div>
+          <label class="field"><span>Nombre de la hamburguesa que competiría</span><input name="hamburguesa"></label>
+          <label class="field"><span>Cuéntanos de tu hamburguesa *</span><textarea name="descripcion" rows="3" required placeholder="Ingredientes, qué la hace única, precio estimado…"></textarea></label>
+          <div class="field-row">
+            <label class="field"><span>¿Ya participaste en BŪR FEST?</span>
+              <select name="experiencia"><option>No, sería la primera vez</option><option>Sí, en una edición anterior</option></select>
+            </label>
+            <label class="field"><span>Sedes / puntos de venta</span><input name="sedes" type="number" min="1" value="1"></label>
+          </div>
+          <label class="check"><input type="checkbox" name="acepta" required> <span>Acepto el tratamiento de datos personales (Ley 1581 de 2012).</span></label>
+          <button class="btn btn-yellow btn-lg btn-block" type="submit">Enviar preinscripción</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ ALIADOS ============ -->
+    <section class="section section-cream" id="aliados">
+      <div class="wrap">
+        <p class="kicker">Aliados</p>
+        <h2 class="h2">Los que hacen posible el parche</h2>
+        <div class="sponsors" id="sponsorsList"></div>
+        <p class="center-cta"><a class="btn btn-pink" id="sponsorLink" href="#">Quiero ser aliado</a></p>
+      </div>
+    </section>
+
+    <!-- ============ MI BURFEST (webapp) ============ -->
+    <section class="section section-pink" id="mi-burfest">
+      <div class="wrap">
+        <p class="kicker">Tu app del festival</p>
+        <h2 class="h2">Mi BŪR FEST</h2>
+        <p class="lead narrow">Tus boletas, tus favoritas y tus votos en un solo lugar. Agrégala a tu pantalla de inicio y úsala sin señal dentro del festival.</p>
+        <div class="me-grid">
+          <div class="panel">
+            <h3>Mis boletas</h3>
+            <div id="myTickets" class="my-tickets"></div>
+          </div>
+          <div class="panel">
+            <h3>Mi ruta de hamburguesas</h3>
+            <ul id="myRoute" class="my-route"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-sky" id="faq">
+      <div class="wrap narrow-wrap">
+        <p class="kicker">Preguntas frecuentes</p>
+        <h2 class="h2">Todo lo que necesitas saber</h2>
+        <div class="faq" id="faqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a href="#inicio" class="brand"><span class="brand-bur">BŪR</span><span class="brand-fest">FEST!</span></a>
+        <p>El festival de hamburguesas en sitio más grande de Colombia.</p>
+      </div>
+      <div class="footer-links">
+        <a id="igLink" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="mailLink" href="#">Contacto</a>
+        <a href="#aliados">Aliados</a>
+        <a href="#faq">Términos y condiciones</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 BŪR FEST ¡El Parche! · Todos los derechos reservados</p>
+  </footer>
+
+  <!-- ============ BOTTOM NAV (modo app en celular) ============ -->
+  <nav class="bottomnav" aria-label="Navegación app">
+    <a href="#inicio"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Inicio</span></a>
+    <a href="#marcas"><svg viewBox="0 0 24 24"><path d="M4 10a8 6 0 0 1 16 0zM3 13h18v2H3zM4 17h16a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/></svg><span>Marcas</span></a>
+    <a href="#boletas" class="bn-main"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4z"/></svg><span>Boleta</span></a>
+    <a href="#ubicacion"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8zm0 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg><span>Ubicación</span></a>
+    <a href="#mi-burfest"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm-9 10a9 9 0 0 1 18 0z"/></svg><span>Mi Fest</span></a>
+  </nav>
+
+  <!-- ============ MODALES ============ -->
+  <dialog class="modal" id="burgerModal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <div id="burgerModalBody"></div>
+  </dialog>
+
+  <dialog class="modal" id="checkoutModal">
+    <button class="modal-close" data-close aria-label="Cerrar">×</button>
+    <form id="checkoutForm" class="checkout" novalidate>
+      <h3 id="coTitle">Saca tu boleta</h3>
+      <div class="co-summary" id="coSummary"></div>
+      <div class="qty">
+        <span>Personas</span>
+        <div class="qty-ctrl">
+          <button type="button" data-qty="-1" aria-label="Menos">−</button>
+          <output id="coQty">1</output>
+          <button type="button" data-qty="1" aria-label="Más">+</button>
+        </div>
+      </div>
+      <label class="field"><span>Día</span><select name="dia" id="coDay"></select></label>
+      <label class="field"><span>Nombre completo *</span><input name="nombre" required autocomplete="name"></label>
+      <div class="field-row">
+        <label class="field"><span>Correo *</span><input name="correo" type="email" required autocomplete="email"></label>
+        <label class="field"><span>Celular *</span><input name="cel" type="tel" required inputmode="tel" autocomplete="tel"></label>
+      </div>
+      <label class="field"><span>Instagram (para sorteos)</span><input name="ig" placeholder="@tuusuario"></label>
+      <fieldset class="pay" id="coPay">
+        <legend>Medio de pago</legend>
+        <label><input type="radio" name="pago" value="Tarjeta" checked> Tarjeta</label>
+        <label><input type="radio" name="pago" value="PSE"> PSE</label>
+        <label><input type="radio" name="pago" value="Nequi"> Nequi</label>
+        <label><input type="radio" name="pago" value="Daviplata"> Daviplata</label>
+      </fieldset>
+      <div class="co-total"><span>Total</span><b id="coTotal">$0</b></div>
+      <button class="btn btn-yellow btn-lg btn-block" type="submit" id="coSubmit">Confirmar</button>
+      <p class="fineprint center" id="coNote">Demo: no se realiza ningún cobro. En producción se conecta a la pasarela de pago (Wompi / Mercado Pago / ePayco).</p>
+    </form>
+    <div id="checkoutDone" class="checkout-done" hidden></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/vendor/qrcode.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
