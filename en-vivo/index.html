@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EN VIVO · Demo</title>
+  <meta name="description" content="EN VIVO: thriller psicológico en tercera persona. Colombia, 1998. Demo jugable en el navegador.">
+  <link rel="stylesheet" href="css/envivo.css">
+  <script type="importmap">
+    { "imports": { "three": "./js/vendor/three/three.module.min.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="ui">
+    <div id="cctv" class="hidden">
+      <div class="scan"></div>
+      <div class="cctv-rec"><span class="dot">●</span> REC</div>
+      <div class="cctv-cam" id="cctvCam">CAM 07 · HAB 312</div>
+      <div class="cctv-time" id="cctvTime">14-10-1998 03:12:44</div>
+    </div>
+    <div id="lidTop" class="lid top"></div>
+    <div id="lidBottom" class="lid bottom"></div>
+    <div id="barTop" class="bar top"></div>
+    <div id="barBottom" class="bar bottom"></div>
+
+    <div id="objective" class="hidden"><small>OBJETIVO</small><span id="objectiveText"></span></div>
+    <div id="prompt" class="hidden"><kbd>E</kbd> <span id="promptText"></span></div>
+    <div id="subtitle" class="hidden"><b id="subSpeaker"></b><span id="subText"></span></div>
+    <div id="recBadge" class="hidden">● REC</div>
+    <div id="demoBadge" class="hidden">MODO DEMO · F9 para jugar</div>
+    <div id="titleCard"></div>
+
+    <div id="flash"></div>
+    <div id="fade"></div>
+    <div id="intertitle"></div>
+    <div id="endCard" class="hidden">
+      <div class="end-live"><span class="dot">●</span> EN VIVO</div>
+      <div class="end-cont">— CONTINUARÁ...</div>
+    </div>
+
+    <div id="clickHint" class="hidden">Haz clic para controlar la cámara</div>
+
+    <div id="pause" class="panel hidden">
+      <h2>PAUSA</h2>
+      <button data-act="resume">Continuar</button>
+      <button data-act="quality">Calidad: <span class="q">Medio</span></button>
+      <button data-act="demo">Modo demo: <span class="d">No</span></button>
+      <button data-act="menu">Volver al menú</button>
+      <p class="keys">WASD moverse · Shift correr · E interactuar · Ratón cámara · Esc pausa · F9 modo demo</p>
+    </div>
+
+    <div id="menu" class="panel">
+      <canvas id="menuStatic"></canvas>
+      <div class="menu-inner">
+        <h1><span class="dot">●</span> EN VIVO</h1>
+        <p class="tag">Colombia, 1998 · Demo</p>
+        <button data-act="play">Jugar</button>
+        <button data-act="autodemo">Modo demo (se juega solo)</button>
+        <button data-act="quality">Calidad: <span class="q">Medio</span></button>
+        <p class="keys">WASD moverse · Shift correr · E interactuar · Ratón cámara · Esc pausa<br>Recomendado: audífonos.</p>
+      </div>
+    </div>
+
+    <div id="loading">Cargando…</div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+:root {
+  --bg: #000;
+  --fg: #f2efe8;
+  --muted: #a9a49a;
+  --rec: #e3262e;
+  --accent: #e8c66a;
+  --sans: "Helvetica Neue", Arial, system-ui, sans-serif;
+  --mono: "Courier New", Courier, "Liberation Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); overflow: hidden; font-family: var(--sans); }
+#game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+#ui { position: fixed; inset: 0; pointer-events: none; user-select: none; }
+.hidden { display: none !important; }
+
+/* Párpados y barras de cine */
+.lid, .bar { position: absolute; left: 0; right: 0; background: #000; height: 0; }
+.lid.top, .bar.top { top: 0; }
+.lid.bottom, .bar.bottom { bottom: 0; }
+.lid { height: 0; }
+
+#fade, #flash { position: absolute; inset: 0; opacity: 1; }
+#fade { background: #000; }
+#flash { background: #fff; opacity: 0; }
+
+/* Subtítulos */
+#subtitle {
+  position: absolute; left: 50%; bottom: 13vh; transform: translateX(-50%);
+  max-width: min(980px, 90vw); text-align: center;
+  font-size: clamp(16px, 2.1vw, 26px); line-height: 1.35;
+  text-shadow: 0 2px 4px #000, 0 0 12px rgba(0,0,0,.8);
+}
+#subSpeaker { font-weight: 700; margin-right: .5em; letter-spacing: .04em; }
+
+/* Objetivo arriba a la izquierda */
+#objective {
+  position: absolute; left: 3vw; top: 4vh; font-size: clamp(14px, 1.4vw, 19px);
+  text-shadow: 0 1px 3px #000; transition: opacity .6s;
+}
+#objective small { display: block; font-size: .65em; letter-spacing: .25em; color: var(--muted); margin-bottom: 4px; }
+
+#prompt {
+  position: absolute; left: 50%; bottom: 24vh; transform: translateX(-50%);
+  font-size: clamp(14px, 1.3vw, 18px); text-shadow: 0 1px 3px #000;
+}
+kbd {
+  display: inline-block; min-width: 1.7em; padding: 1px 6px; margin-right: 6px; text-align: center;
+  border: 1.5px solid var(--fg); border-radius: 4px; font-family: var(--sans); font-weight: 700;
+}
+
+#recBadge, .cctv-rec { color: var(--rec); font-family: var(--mono); font-weight: 700; letter-spacing: .1em; }
+#recBadge { position: absolute; right: 3vw; top: 4vh; font-size: 18px; text-shadow: 0 0 6px rgba(227,38,46,.6); }
+#demoBadge { position: absolute; right: 3vw; bottom: 3vh; font-size: 12px; letter-spacing: .15em; color: var(--muted); }
+
+/* Tarjeta de lugar y hora */
+#titleCard {
+  position: absolute; left: 6vw; bottom: 18vh; font-size: clamp(14px, 1.5vw, 20px);
+  letter-spacing: .32em; opacity: 0; text-shadow: 0 1px 6px #000; white-space: pre;
+}
+
+/* Intertítulos a máquina de escribir */
+#intertitle {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: min(900px, 86vw); font-family: var(--mono); font-size: clamp(16px, 1.9vw, 24px);
+  line-height: 1.75; white-space: pre-wrap; color: #e9e4d8;
+}
+#intertitle .cursor { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Vista de cámara de vigilancia */
+#cctv { position: absolute; inset: 0; font-family: var(--mono); font-size: clamp(14px, 1.7vw, 24px); color: #e9f0e6; text-shadow: 0 0 4px rgba(0,0,0,.9); }
+#cctv .scan { position: absolute; inset: 0; background: repeating-linear-gradient(to bottom, rgba(0,0,0,.22) 0 2px, transparent 2px 4px); }
+.cctv-rec { position: absolute; left: 4vw; top: 5vh; }
+.cctv-cam { position: absolute; right: 4vw; top: 5vh; }
+.cctv-time { position: absolute; right: 4vw; bottom: 6vh; }
+.dot { color: var(--rec); animation: blink 1.2s steps(1) infinite; }
+
+#endCard { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.end-live { font-size: clamp(42px, 8vw, 120px); font-weight: 800; letter-spacing: .06em; text-shadow: 0 0 30px rgba(227,38,46,.45); }
+.end-cont { margin-top: 1vh; font-size: clamp(16px, 2.2vw, 30px); letter-spacing: .4em; color: var(--accent); }
+
+#clickHint { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px 16px; background: rgba(0,0,0,.6); border-radius: 6px; font-size: 14px; }
+
+/* Menús */
+.panel { position: absolute; inset: 0; pointer-events: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+#pause { background: rgba(0,0,0,.72); }
+.panel h2 { letter-spacing: .3em; font-weight: 600; margin: 0 0 16px; }
+.panel button {
+  pointer-events: auto; min-width: 280px; padding: 12px 22px; font: inherit; font-size: 16px; letter-spacing: .08em;
+  color: var(--fg); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.25); border-radius: 3px; cursor: pointer;
+}
+.panel button:hover, .panel button:focus-visible { background: rgba(255,255,255,.16); border-color: var(--fg); outline: none; }
+.panel .keys { margin-top: 18px; font-size: 12px; color: var(--muted); text-align: center; line-height: 1.6; }
+#menu { background: #050505; }
+#menuStatic { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .16; image-rendering: pixelated; }
+.menu-inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 0 16px; }
+#menu h1 { font-size: clamp(48px, 10vw, 128px); margin: 0; letter-spacing: .06em; font-weight: 800; }
+#menu .tag { margin: 0 0 28px; letter-spacing: .4em; color: var(--muted); font-size: 13px; text-transform: uppercase; }
+
+#loading { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: var(--muted); letter-spacing: .3em; font-size: 12px; }
+
+@media (max-width: 600px) {
+  .panel button { min-width: 0; width: 100%; }
+  .menu-inner { width: 100%; }
+}
