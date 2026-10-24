@@ -104,3 +104,12 @@ kbd {
   .panel button { min-width: 0; width: 100%; }
   .menu-inner { width: 100%; }
 }
+
+/* Controles táctiles */
+#touchUI { position: absolute; inset: 0; }
+#stick { position: absolute; left: 8vw; bottom: 10vh; width: 120px; height: 120px; border-radius: 50%; border: 2px solid rgba(255,255,255,.25); opacity: .35; }
+#stick.on { opacity: .8; }
+#knob { position: absolute; left: 35px; top: 35px; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,.35); }
+#btnE, #btnPause { position: absolute; pointer-events: auto; border-radius: 50%; border: 2px solid rgba(255,255,255,.5); background: rgba(0,0,0,.35); color: var(--fg); font: 700 22px var(--sans); }
+#btnE { right: 7vw; bottom: 14vh; width: 72px; height: 72px; }
+#btnPause { right: 4vw; top: 4vh; width: 46px; height: 46px; font-size: 14px; }

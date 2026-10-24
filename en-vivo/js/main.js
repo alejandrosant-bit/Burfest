@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { RoomEnvironment } from './vendor/three/environments/RoomEnvironment.js';
 import { tick, abortAll, spawn, wait, clock, ABORT } from './core/time.js';
-import { input } from './core/input.js';
+import { input, isTouch } from './core/input.js';
 import { ui } from './core/ui.js';
 import { audio } from './core/audio.js';
 import { Post } from './core/post.js';
@@ -49,7 +49,7 @@ export const G = {
   world: null, player: null, sceneName: null,
   paused: false, demo: false, inGame: false, loading: false,
   timeScale: Number(new URLSearchParams(location.search).get('vel')) || 1,
-  quality: new URLSearchParams(location.search).get('calidad') || localStorage.getItem('envivo.quality') || 'medio',
+  quality: new URLSearchParams(location.search).get('calidad') || localStorage.getItem('envivo.quality') || (isTouch ? 'bajo' : 'medio'),
 
   lines(key) { return LINES[key] || []; },
 
@@ -211,7 +211,7 @@ document.getElementById('pause').addEventListener('click', (e) => {
 canvas.addEventListener('click', () => { if (G.inGame && !G.paused && !G.demo) input.lock(); });
 document.addEventListener('pointerlockchange', () => {
   // Esc en el navegador suelta el ratón sin enviar la tecla: lo tratamos como pausa.
-  if (!input.locked && G.inGame && !G.paused && !G.demo && G.player && !G.loading) setPaused(true);
+  if (!isTouch && !input.locked && G.inGame && !G.paused && !G.demo && G.player && !G.loading) setPaused(true);
 });
 
 // Estática animada de fondo del menú
@@ -256,7 +256,7 @@ function frame(now) {
     const ctx = { player: G.player && G.player.char, rig, camera };
     for (const cam of w.cams) cam.update(dt, clock.time, ctx);
     rig.update(dt);
-    ui.setClickHint(G.inGame && !G.paused && !G.demo && !input.locked && G.player && G.player.state === 'free' && !G.loading);
+    ui.setClickHint(!isTouch && G.inGame && !G.paused && !G.demo && !input.locked && G.player && G.player.state === 'free' && !G.loading);
     post.render(clock.time);
   } else {
     menuStatic();
