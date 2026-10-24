@@ -17,6 +17,12 @@ import cafeteria from './scenes/cafeteria.js';
 import hospital from './scenes/hospital.js';
 
 const SCENES = { aula, pasillo, cafeteria, hospital };
+
+// La memoria del navegador puede estar bloqueada (p. ej. dentro de un iframe aislado): nunca debe romper el juego.
+const store = {
+  get(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { window.localStorage.setItem(k, v); } catch (e) { /* sin memoria persistente */ } },
+};
 const ORDER = ['aula', 'pasillo', 'cafeteria', 'hospital'];
 
 const QUALITY = {
@@ -49,7 +55,7 @@ export const G = {
   world: null, player: null, sceneName: null,
   paused: false, demo: false, inGame: false, loading: false,
   timeScale: Number(new URLSearchParams(location.search).get('vel')) || 1,
-  quality: new URLSearchParams(location.search).get('calidad') || localStorage.getItem('envivo.quality') || (isTouch ? 'bajo' : 'medio'),
+  quality: new URLSearchParams(location.search).get('calidad') || store.get('envivo.quality') || (isTouch ? 'bajo' : 'medio'),
 
   lines(key) { return LINES[key] || []; },
 
@@ -134,7 +140,7 @@ function applyQuality() {
   }
   resize();
   document.querySelectorAll('.q').forEach((e) => { e.textContent = q.label; });
-  localStorage.setItem('envivo.quality', G.quality);
+  store.set('envivo.quality', G.quality);
 }
 
 function cycleQuality() {
@@ -173,7 +179,7 @@ function setPaused(p) {
 }
 
 function startGame(demo, scene = 'aula') {
-  audio.init();
+  try { audio.init(); } catch (e) { console.warn('Audio no disponible', e); }
   document.getElementById('menu').classList.add('hidden');
   G.inGame = true;
   setDemo(demo);
@@ -256,7 +262,7 @@ function frame(now) {
     const ctx = { player: G.player && G.player.char, rig, camera };
     for (const cam of w.cams) cam.update(dt, clock.time, ctx);
     rig.update(dt);
-    ui.setClickHint(!isTouch && G.inGame && !G.paused && !G.demo && !input.locked && G.player && G.player.state === 'free' && !G.loading);
+    ui.setClickHint(!isTouch && !input.lockBlocked && G.inGame && !G.paused && !G.demo && !input.locked && G.player && G.player.state === 'free' && !G.loading);
     post.render(clock.time);
   } else {
     menuStatic();

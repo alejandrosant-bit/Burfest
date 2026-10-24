@@ -21,8 +21,11 @@ export const input = {
     });
     addEventListener('keyup', (e) => down.delete(e.code));
     addEventListener('blur', () => down.clear());
+    let dragging = false;
+    addEventListener('mousedown', () => { dragging = true; });
+    addEventListener('mouseup', () => { dragging = false; });
     addEventListener('mousemove', (e) => {
-      if (document.pointerLockElement === canvasEl) { mouseDX += e.movementX; mouseDY += e.movementY; }
+      if (document.pointerLockElement === canvasEl || (this.lockBlocked && dragging)) { mouseDX += e.movementX; mouseDY += e.movementY; }
     });
     addEventListener('mousedown', (e) => { if (e.button === 0) incoming.add('Mouse0'); });
     if (isTouch) this._initTouch();
@@ -66,7 +69,11 @@ export const input = {
   },
 
   get locked() { return document.pointerLockElement === canvasEl; },
-  lock() { if (canvasEl && !this.locked) canvasEl.requestPointerLock?.()?.catch?.(() => {}); },
+  lock() {
+    // Puede estar bloqueado (iframe aislado): el juego sigue y la cámara se mueve arrastrando con el ratón.
+    if (!canvasEl || this.locked) return;
+    try { const r = canvasEl.requestPointerLock?.(); if (r && r.catch) r.catch(() => { this.lockBlocked = true; }); } catch (e) { this.lockBlocked = true; }
+  },
   unlock() { if (this.locked) document.exitPointerLock(); },
 
   // Llamar al empezar cada cuadro: lo pulsado queda válido durante todo el cuadro
