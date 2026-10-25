@@ -56,6 +56,7 @@ Ese primer combate es el tutorial. Hazlo con la cámara del juego más algunos p
 - **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote. El día **no es tranquilo**: hay zombis sueltos y, a veces, una oleada sorpresa (ver "Ritmo").
 - **Atardecer:** aviso de oleada ("Se acercan...").
 - **Noche (unos 3 minutos):** la oleada principal. Sobrevivir defendiendo la cabaña.
+- La demo (después de la introducción) son **los últimos 3 días del otoño y la primera noche de invierno**. En el día 3 cae la primera nevada y el lago empieza a congelarse; la demo termina al sobrevivir la primera noche nevada, con la pantalla de "Fin de la demo" y estadísticas.
 
 **Ritmo: supervivencia, pero entretenida y con mucha acción**
 - Prioridad: que siempre haya algo que hacer y una razón para moverse. Nada de esperar sin hacer nada ni de gestión tediosa.
@@ -66,7 +67,6 @@ Ese primer combate es el tutorial. Hazlo con la cámara del juego más algunos p
 - **Que todo sea ágil:** recoger es automático al pasar cerca, fabricar y cocinar toman segundos, las necesidades bajan despacio, el inventario es simple.
 - **Combate con peso:** golpes que se sienten (ver "Sensación de golpe" en Animación), esquiva con una tecla (rodar o empujar) con un tiempo de espera, y zombis que reaccionan a cada golpe.
 - Los porcentajes y frecuencias van en un recurso de datos (`PacingData.tres`) para ajustarlos al probar.
-- La demo son **los últimos 3 días del otoño y la primera noche de invierno**. En el día 3 cae la primera nevada y el lago empieza a congelarse; la demo termina al sobrevivir la primera noche nevada, con la pantalla de "Fin de la demo" y estadísticas.
 
 **Las cuatro estaciones, por días de juego:**
 - Cada estación dura **5 días de juego**, en orden: otoño → invierno → primavera → verano → otoño... Con días de unos 7 minutos (día más noche), una estación son unos 35 minutos y un año unas 2 h 20 min de juego.
