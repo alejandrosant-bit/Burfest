@@ -27,7 +27,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 ## Paso 0: entorno
 
 - Encuentra los ejecutables de Godot 4 y Blender y dime sus versiones. Si falta alguno, dime cómo instalarlo; no lo instales tú sin permiso.
-- Crea el proyecto Godot con renderizador Forward+ para PC. Más adelante, para el celular, se cambiará a Mobile.
+- **Mi PC es modesto:** gráfica AMD Radeon Vega 8 integrada y 8 GB de RAM. Crea el proyecto con el renderizador **Mobile** (más liviano y el mismo que usará el celular). No abras Blender y Godot a la vez si no hace falta, y usa Blender sin ventana (`--background`) siempre que puedas. Meta de rendimiento: 60 fps en este PC.
 - **Control de versiones con GitHub:**
   - Inicializa git con un `.gitignore` para Godot (`.godot/`, `_capturas/`, `*.blend1`, exportaciones de builds).
   - Configura **Git LFS** para archivos pesados: `*.blend`, `*.glb`, `*.fbx`, `*.png`, `*.wav`, `*.ogg`. Pídeme permiso si hay que instalar Git LFS.
@@ -186,6 +186,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
   - Reloj del día y número de noche, arriba al centro, con un ícono de la estación y cuántos días faltan para la siguiente ("Invierno en 2 días").
   - Munición y arma actual, abajo a la derecha.
   - Aviso grande de "NOCHE 1 · SE ACERCAN".
+- **Menú principal** con tres modos: **Historia** (el único activo en la demo), **Solitario** y **Multijugador** (estos dos con la etiqueta "Próximamente").
 - **Pantallas:** inventario y fabricación, cocina, expedición en bote, radio con texto, pausa con opciones (volumen y calidad), menú principal con la cabaña de fondo, muerte y fin de demo.
 - **Pensada para el celular desde ya:**
   - Todo escala con anclajes.
@@ -208,6 +209,11 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 ```
 
 - Usa GDScript con tipos estáticos. Los datos van en recursos `.tres`, no quemados en el código.
+- **Preparado para Solitario y Multijugador** (ver `docs/VISION.md`; no implementes nada de red todavía):
+  - La lógica del juego (necesidades, inventario, estructuras, zombis, oleadas) vive separada de lo visual.
+  - Nada asume un solo jugador: cada jugador es una entidad con un identificador.
+  - Las acciones del jugador son comandos ("golpear", "construir", "reparar", "curar"), para poder enviarlos por la red más adelante.
+  - Las habilidades se organizan en cuatro ramas (Medicina, Caza, Construcción y Armería), aunque en la demo sólo se usen las básicas.
 - **Modelos de Blender:**
   - Genéralos con scripts de Python en `tools/blender/` y expórtalos a glTF (`.glb`) en `assets/models/`, en metros, con +Y arriba.
   - Usa las convenciones de importación de Godot en los nombres de objeto: sufijo `-col` o `-colonly` para colisiones y `-navmesh` donde aplique.
@@ -216,7 +222,7 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 
 ## Fases (detente al final de cada una, muéstrame la captura y espera mi visto bueno)
 
-1. **Bloqueo:** mapa con formas simples, cámara, movimiento del jugador, colisiones, entrar y salir de la cabaña con el techo que se desvanece.
+1. **Bloqueo:** mapa con formas simples, cámara, movimiento del jugador, colisiones, entrar y salir de la cabaña con la casa que "se abre".
 2. **Arte del mundo:** modelos de Blender (cabaña, árboles, camioneta, muelle, bote), shader de dos tonos, luz de luna y ventanas, nieve, huellas, niebla y *bloom*. La captura debe parecerse a las referencias.
 3. **Supervivencia:** necesidades, inventario, leña, agua y hervir, pesca, cocina, ciclo día/noche.
 4. **Zombis y oleadas:** los dos tipos, navegación, ruido, barricadas con durabilidad, hacha, escopeta y mejoras.
