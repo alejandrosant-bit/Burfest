@@ -123,6 +123,27 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Cámara:** perspectiva alta en tres cuartos, unos 55° hacia abajo, FOV bajo (unos 35°). Sigue al jugador con suavidad, sin rotación libre en la demo, con zoom limitado con la rueda del ratón.
 - **Personaje:** Anselmo, figura robusta de abrigo oscuro, gorro y bufanda roja. Zombis con ropa de ciudad desteñida y piel gris verdosa, en el mismo estilo.
 
+## Animación (que se sienta fluida)
+
+- **Origen de las animaciones:** usa **Mixamo** (gratis, en la opción "In Place") como base para caminar, correr, idle, golpear con el hacha, disparar, recargar, morir y las caminatas y ataques de zombi. No inventes animaciones de personaje con keyframes por script: quedan rígidas. Si falta alguna, avísame y la hacemos en Cascadeur o en Blender a mano.
+- **Un solo esqueleto humanoide** para Anselmo y los zombis. Usa el reasignado (*retargeting*) de Godot (BoneMap con SkeletonProfileHumanoid) para compartir animaciones.
+- **AnimationTree, no AnimationPlayer suelto:**
+  - **Locomoción** con BlendSpace2D según la velocidad y la dirección relativa a donde mira (idle, caminar, correr y caminar de lado al apuntar).
+  - **Máquina de estados** con fundidos cortos de 0,1 a 0,2 s entre estados.
+  - **Capas de cuerpo:** las piernas siguen caminando mientras el torso hace otra acción (golpear, apuntar, recargar, beber, martillar). Usa un Blend2 con filtro de huesos de cintura para arriba.
+- **Movimiento suave:**
+  - Aceleración y frenado con curvas, no velocidad instantánea.
+  - Giro del personaje con interpolación (slerp).
+  - Leve inclinación al girar corriendo.
+  - Activa la **interpolación de física** del proyecto para que no haya tirones en monitores de más de 60 Hz. La cámara se suaviza en `_process`.
+- **Detalles procedurales:**
+  - La cabeza mira hacia el objetivo o el zombi más cercano.
+  - Pies con IK sobre la nieve y los escalones del porche si da tiempo.
+  - La **bufanda roja** con huesos de resorte para que se mueva al correr y con el viento (SpringBoneSimulator3D si la versión de Godot lo tiene; si no, un script simple de resorte).
+  - Zombis que caen como muñeco de trapo (*ragdoll*) al morir, con PhysicalBoneSimulator3D.
+- **Sensación de golpe (*game feel*):** congelar la imagen 40 a 60 ms al conectar un hachazo, sacudida corta de cámara, destello en el zombi golpeado, retroceso del arma y partículas de nieve o astillas. Esto hace que el combate se sienta fluido aunque las animaciones sean simples.
+- **Rendimiento con muchos zombis:** los zombis lejanos o fuera de pantalla actualizan la animación con menos frecuencia (VisibleOnScreenNotifier3D). Meta: 60 fps estables con 30 zombis en pantalla.
+
 ## Interfaz (terminada en la demo)
 
 - Estilo limpio, plano y legible, con la paleta del juego; fuente libre con licencia OFL de Google Fonts.
