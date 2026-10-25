@@ -198,7 +198,7 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 - **Modelos de Blender:**
   - Genéralos con scripts de Python en `tools/blender/` y expórtalos a glTF (`.glb`) en `assets/models/`, en metros, con +Y arriba.
   - Usa las convenciones de importación de Godot en los nombres de objeto: sufijo `-col` o `-colonly` para colisiones y `-navmesh` donde aplique.
-  - Personajes: malla *low-poly* con esqueleto simple (cadera, columna, cabeza, brazos y piernas) y animaciones básicas hechas por script (idle, caminar, correr, golpear, morir). Si eso se complica, propón usar Mixamo.
+  - Personajes: malla *low-poly* en pose T. El esqueleto y las animaciones salen de Mixamo, con la capa de personalidad en Blender (ver "Animación").
 - **Sonido:** usa marcadores silenciosos con nombres claros y dime qué sonidos conseguir. Fuentes recomendadas: Freesound (revisar licencia) y jsfxr para sonidos de interfaz.
 
 ## Fases (detente al final de cada una, muéstrame la captura y espera mi visto bueno)
