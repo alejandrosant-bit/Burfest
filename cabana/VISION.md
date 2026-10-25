@@ -7,14 +7,14 @@ Documento de referencia para después de la demo. La demo actual es sólo del **
 | Modo | Qué es |
 |---|---|
 | **Historia** | Anselmo solo: la radio, las estaciones, los capítulos y el bote para buscar recursos. Es lo primero que se construye. |
-| **Solitario** | Supervivencia por oleadas sin historia. Sólo Anselmo, sin bots. |
+| **Solitario** | Supervivencia por oleadas sin historia. Sólo Anselmo, sin bots. Las oleadas están **ajustadas a lo que puede responder una sola persona**: menos zombis por oleada, ataques por un solo frente a la vez al principio y más tiempo entre oleadas para reparar. Anselmo desarrolla **todas las habilidades a la vez** (ver "Habilidades"). |
 | **Multijugador** | Modo horda cooperativo de 4 jugadores. Partida privada con amigos o partida pública. |
 
 ## Multijugador: modo horda cooperativo
 
 - No es contra otros jugadores: los 4 jugadores cooperan contra oleadas de zombis.
 - La partida empieza en una cabaña **sin recursos**. Entre todos la reconstruyen, la refuerzan y ven cuántas oleadas sobreviven.
-- **No hay bote** en este modo. Los recursos salen del mapa: bosque, lago y lo que se consiga entre oleadas.
+- **No hay bote** en este modo. Los recursos salen del mapa (bosque, lago) y de un **helicóptero que deja caer cajas de suministro entre oleadas**, lejos de la cabaña. Hay que salir de la base a buscarlas con riesgo, y el ruido de la caída atrae zombis.
 - **Partida privada:** con amigos, mediante un código de invitación.
 - **Partida pública:** busca jugadores y completa con **bots de IA** los lugares que falten (al principio habrá poca gente). La IA de los bots se diseña más adelante.
 
@@ -29,6 +29,16 @@ Todos los roles pelean igual (mismas armas básicas y misma resistencia). Cada u
 | **Constructor** | Construye muros de madera y torres de vigilancia, y repara las estructuras más rápido. |
 | **Cuarto rol** | Por definir. |
 
+### Habilidades: Solitario frente a Multijugador
+
+Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, Construcción y la cuarta por definir), con barras de experiencia que suben al hacer cada acción: curar, disparar a distancia, construir o reparar, etc.
+
+| | Solitario | Multijugador |
+|---|---|---|
+| Ramas | Anselmo sube **todas** a la vez, según lo que haga | Cada jugador elige **una** al empezar la partida |
+| Progreso | Barras de experiencia por rama; cada nivel desbloquea mejoras (curar más rápido, más daño con arco, muros más resistentes...) | El rol elegido arranca con sus habilidades extra y sube de nivel en la partida |
+| Equilibrio | Al cubrir todo solo, cada rama sube más lento que en multijugador | Los roles se complementan; nadie lo hace todo |
+
 ### Estructuras
 
 - **Muros de madera** alrededor de la cabaña, construidos por el constructor. Los zombis los golpean hasta romperlos.
@@ -38,7 +48,6 @@ Todos los roles pelean igual (mismas armas básicas y misma resistencia). Cada u
 ### Ideas pendientes de decidir
 
 - **Cuarto rol.** Opciones: armero o mecánico (fabrica y mejora armas, munición y trampas) o recolector (corta leña y junta recursos más rápido y carga más).
-- **Cajas de suministro entre oleadas**, por ejemplo un helicóptero que deja caer provisiones lejos de la cabaña. Obligan a salir de la base con riesgo y compensan que no haya bote.
 - **Revivir:** al caer, el jugador queda en el suelo unos segundos y cualquiera lo puede levantar; el médico lo hace más rápido y con más vida.
 - **Tabla de clasificación** de oleadas sobrevividas y un **reto semanal** con la misma cabaña y las mismas condiciones para todos.
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
