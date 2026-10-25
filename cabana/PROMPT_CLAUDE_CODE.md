@@ -41,15 +41,15 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote.
 - **Atardecer:** aviso de oleada ("Se acercan...").
 - **Noche (unos 3 minutos):** oleada de zombis. Sobrevivir defendiendo la cabaña.
-- La demo dura **3 días de juego** (los días de juego son cortos; las estaciones se miden en tiempo real, ver abajo). Al final, pantalla de "Fin de la demo" con estadísticas.
+- La demo son **los últimos 3 días del otoño y la primera noche de invierno**. En el día 3 cae la primera nevada y el lago empieza a congelarse; la demo termina al sobrevivir la primera noche nevada, con la pantalla de "Fin de la demo" y estadísticas.
 
-**Las cuatro estaciones, en tiempo real:**
-- La estación cambia **cada día real (24 horas reales)**, en orden: invierno → primavera → verano → otoño → invierno...
-- Se calcula con el reloj del sistema: `estacion = floor((ahora_unix - inicio_unix) / 86400) % 4`. `inicio_unix` es la fecha de la primera partida y se guarda en `user://` (usa `Time.get_unix_time_from_system()`). Si el jugador no entra en varios días, al volver la estación es la que corresponde.
-- La primera estación es **invierno**, para que la primera impresión coincida con las referencias.
-- Si el día real cambia mientras se juega, hay una transición suave de unos 60 s (cambian la luz, la vegetación, el suelo y las partículas) con un aviso: "Llega la primavera".
+**Las cuatro estaciones, por días de juego:**
+- Cada estación dura **5 días de juego**, en orden: otoño → invierno → primavera → verano → otoño... Con días de unos 7 minutos (día más noche), una estación son unos 35 minutos y un año unas 2 h 20 min de juego.
+- Se calcula con el día de juego: `estacion = floor(dia / 5) % 4`. Se guarda con la partida; no depende del reloj del sistema.
+- La partida empieza a **finales de otoño** (en el día 2 contando desde 0, así quedan 3 días de otoño antes del invierno), para que el primer objetivo sea prepararse para el invierno. La dificultad de las oleadas sube con cada estación y con cada año.
+- El cambio de estación ocurre al amanecer del día que corresponde, con una transición suave de unos 60 s (cambian la luz, la vegetación, el suelo y las partículas) y un aviso: "Llega el invierno".
 - Configura todo en un recurso `SeasonData.tres` por estación, nunca quemado en el código: paleta, luces, partículas, duración del día y de la noche, multiplicadores de necesidades, estado del lago, botín, tipos y cantidad de zombis.
-- **Menú de depuración (F1, sólo en modo desarrollo):** forzar estación, adelantar días reales simulados y ver la transición. Es indispensable para probar, porque de otra forma sólo se vería una estación por día.
+- **Menú de depuración (F1, sólo en modo desarrollo):** forzar estación, saltar días y ver la transición, para probar sin jugar horas.
 
 | | Invierno | Primavera | Verano | Otoño |
 |---|---|---|---|---|
@@ -129,7 +129,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **HUD:**
   - Las cinco barras de necesidades, abajo a la izquierda.
   - Barra rápida, abajo al centro.
-  - Reloj del día y número de noche, arriba al centro, con un ícono de la estación y cuánto falta en tiempo real para la siguiente ("Primavera en 5 h").
+  - Reloj del día y número de noche, arriba al centro, con un ícono de la estación y cuántos días faltan para la siguiente ("Invierno en 2 días").
   - Munición y arma actual, abajo a la derecha.
   - Aviso grande de "NOCHE 1 · SE ACERCAN".
 - **Pantallas:** inventario y fabricación, cocina, expedición en bote, radio con texto, pausa con opciones (volumen y calidad), menú principal con la cabaña de fondo, muerte y fin de demo.
@@ -166,7 +166,7 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 2. **Arte del mundo:** modelos de Blender (cabaña, árboles, camioneta, muelle, bote), shader de dos tonos, luz de luna y ventanas, nieve, huellas, niebla y *bloom*. La captura debe parecerse a las referencias.
 3. **Supervivencia:** necesidades, inventario, leña, agua y hervir, pesca, cocina, ciclo día/noche.
 4. **Zombis y oleadas:** los dos tipos, navegación, ruido, barricadas con durabilidad, hacha, escopeta y mejoras.
-5. **Estaciones, bote y radio:** las cuatro estaciones en tiempo real con sus `SeasonData`, transición entre ellas, menú de depuración, expediciones en bote (y a pie por el hielo en invierno) y boletines. Muéstrame una captura del mismo encuadre en cada estación.
+5. **Estaciones, bote y radio:** las cuatro estaciones por días de juego con sus `SeasonData`, transición entre ellas, menú de depuración, expediciones en bote (y a pie por el hielo en invierno) y boletines. Muéstrame una captura del mismo encuadre en cada estación.
 6. **Interfaz y pulido:** todas las pantallas terminadas, menú principal, fin de demo, controles táctiles, ajuste de dificultad para que los 3 días se puedan ganar pero con tensión.
 
 **Al terminar**, dame:

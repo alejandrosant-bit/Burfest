@@ -78,7 +78,7 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - **Revivir:** al caer, el jugador queda en el suelo unos segundos y cualquiera lo puede levantar; el médico lo hace más rápido y con más vida.
 - **Tabla de clasificación** de oleadas sobrevividas y un **reto semanal** con la misma cabaña y las mismas condiciones para todos.
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
-- **Estaciones:** en Historia y Solitario avanzan por días de juego. En Multijugador podrían ser un calendario compartido por el servidor.
+- **Estaciones en Multijugador:** en Historia y Solitario cambian cada 5 días de juego (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
 
 ## Orden de desarrollo
 
