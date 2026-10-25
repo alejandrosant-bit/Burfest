@@ -28,7 +28,12 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 - Encuentra los ejecutables de Godot 4 y Blender y dime sus versiones. Si falta alguno, dime cómo instalarlo; no lo instales tú sin permiso.
 - Crea el proyecto Godot con renderizador Forward+ para PC. Más adelante, para el celular, se cambiará a Mobile.
-- Inicializa git con un `.gitignore` para Godot (`.godot/`, `_capturas/`).
+- **Control de versiones con GitHub:**
+  - Inicializa git con un `.gitignore` para Godot (`.godot/`, `_capturas/`, `*.blend1`, exportaciones de builds).
+  - Configura **Git LFS** para archivos pesados: `*.blend`, `*.glb`, `*.fbx`, `*.png`, `*.wav`, `*.ogg`. Pídeme permiso si hay que instalar Git LFS.
+  - Conecta con mi repositorio privado `el-viejo-del-lago` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
+  - Haz un commit con mensaje claro al terminar cada tarea y **sube (push) al final de cada fase**, cuando yo apruebe la captura. Trabaja en una rama por fase (`fase-1-bloqueo`, `fase-2-arte`...) y únela a `main` cuando la apruebe.
+  - Copia `PROMPT_CLAUDE_CODE.md` y `VISION.md` a una carpeta `docs/` del repositorio.
 - Detente y repórtame.
 
 ## El juego
