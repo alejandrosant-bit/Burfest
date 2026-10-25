@@ -26,12 +26,12 @@ Todos los roles pelean igual (mismas armas básicas y misma resistencia). Cada u
 |---|---|
 | **Médico** | Va a curar a los compañeros caídos en el campo mientras los demás lo cubren. Cura más rápido y rinde más los vendajes. |
 | **Cazador** | Experto con arco y flechas y con el rifle de francotirador. Más daño y precisión a distancia. |
-| **Constructor** | Construye muros de madera y torres de vigilancia, y repara las estructuras más rápido. |
-| **Cuarto rol** | Por definir. |
+| **Constructor** | Construye muros de madera, torres de vigilancia y **trampas** (estacas, alambre, fosos), y repara las estructuras más rápido. |
+| **Armero** | **Mejora las armas** (daño, cargador, durabilidad) y **fabrica munición** (balas, cartuchos y flechas para el cazador). |
 
 ### Habilidades: Solitario frente a Multijugador
 
-Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, Construcción y la cuarta por definir), con barras de experiencia que suben al hacer cada acción: curar, disparar a distancia, construir o reparar, etc.
+Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, Construcción y Armería), con barras de experiencia que suben al hacer cada acción: curar, disparar a distancia, construir o reparar, etc.
 
 | | Solitario | Multijugador |
 |---|---|---|
@@ -47,7 +47,6 @@ Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, C
 
 ### Ideas pendientes de decidir
 
-- **Cuarto rol.** Opciones: armero o mecánico (fabrica y mejora armas, munición y trampas) o recolector (corta leña y junta recursos más rápido y carga más).
 - **Revivir:** al caer, el jugador queda en el suelo unos segundos y cualquiera lo puede levantar; el médico lo hace más rápido y con más vida.
 - **Tabla de clasificación** de oleadas sobrevividas y un **reto semanal** con la misma cabaña y las mismas condiciones para todos.
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
