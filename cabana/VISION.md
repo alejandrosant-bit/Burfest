@@ -39,6 +39,24 @@ Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, C
 | Progreso | Barras de experiencia por rama; cada nivel desbloquea mejoras (curar más rápido, más daño con arco, muros más resistentes...) | El rol elegido arranca con sus habilidades extra y sube de nivel en la partida |
 | Equilibrio | Al cubrir todo solo, cada rama sube más lento que en multijugador | Los roles se complementan; nadie lo hace todo |
 
+### Si un jugador se desconecta
+
+Regla de diseño: **los roles dan ventaja, no exclusividad.** Nadie debe quedar bloqueado porque falte un rol.
+
+1. **Todos pueden hacer lo básico de cada rol; el rol lo hace mejor:**
+
+   | Acción | Cualquier jugador | El especialista |
+   |---|---|---|
+   | Curar | Vendaje simple, lento, cura poco | Rápido, cura más, puede curar en el campo y fabrica vendajes |
+   | Construir y reparar | Reparar despacio, poner barricadas simples | Muros, torres y trampas; repara rápido |
+   | Munición | Fabricar munición básica y flechas simples en el banco, despacio y con más material | Más rápido, más barato, munición mejorada y mejoras de armas |
+   | Disparar a distancia | Arco y rifle con precisión normal | Más daño y precisión, francotirador |
+
+2. **Un bot toma su lugar al instante**, con el mismo rol, nivel e inventario. Si el jugador vuelve dentro de un tiempo (propuesta: 5 minutos), recupera su personaje. Si no vuelve, el bot sigue hasta el final y puede entrar otra persona a reemplazarlo.
+3. **Nada se pierde:** las armas mejoradas por el armero, las estructuras del constructor y los vendajes ya fabricados siguen existiendo. Si el personaje sale de la partida sin bot, su inventario queda en un cofre de la cabaña.
+4. **Las oleadas se recalculan** con la cantidad de jugadores activos (personas más bots) para que la partida siga siendo justa.
+5. **Cambiar de rol entre oleadas:** en una mesa de la cabaña, un jugador puede pasarse al rol que quedó libre, empezando en nivel bajo.
+
 ### Salud y curación
 
 - **Regeneración natural:** cuando un jugador deja de recibir daño durante unos segundos (propuesta: 8 s), recupera vida poco a poco (propuesta: 1 % por segundo). Si lo vuelven a golpear, la regeneración se corta y el contador vuelve a empezar.
