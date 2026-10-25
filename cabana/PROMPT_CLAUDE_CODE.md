@@ -41,7 +41,25 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote.
 - **Atardecer:** aviso de oleada ("Se acercan...").
 - **Noche (unos 3 minutos):** oleada de zombis. Sobrevivir defendiendo la cabaña.
-- La demo dura **3 días**. Al final, pantalla de "Fin de la demo" con estadísticas.
+- La demo dura **3 días de juego** (los días de juego son cortos; las estaciones se miden en tiempo real, ver abajo). Al final, pantalla de "Fin de la demo" con estadísticas.
+
+**Las cuatro estaciones, en tiempo real:**
+- La estación cambia **cada día real (24 horas reales)**, en orden: invierno → primavera → verano → otoño → invierno...
+- Se calcula con el reloj del sistema: `estacion = floor((ahora_unix - inicio_unix) / 86400) % 4`. `inicio_unix` es la fecha de la primera partida y se guarda en `user://` (usa `Time.get_unix_time_from_system()`). Si el jugador no entra en varios días, al volver la estación es la que corresponde.
+- La primera estación es **invierno**, para que la primera impresión coincida con las referencias.
+- Si el día real cambia mientras se juega, hay una transición suave de unos 60 s (cambian la luz, la vegetación, el suelo y las partículas) con un aviso: "Llega la primavera".
+- Configura todo en un recurso `SeasonData.tres` por estación, nunca quemado en el código: paleta, luces, partículas, duración del día y de la noche, multiplicadores de necesidades, estado del lago, botín, tipos y cantidad de zombis.
+- **Menú de depuración (F1, sólo en modo desarrollo):** forzar estación, adelantar días reales simulados y ver la transición. Es indispensable para probar, porque de otra forma sólo se vería una estación por día.
+
+| | Invierno | Primavera | Verano | Otoño |
+|---|---|---|---|---|
+| **Mundo** | Nieve, árboles desnudos, nieve cayendo | Nieve derritiéndose y charcos, brotes verdes, lluvia | Pasto verde, árboles frondosos, luciérnagas de noche | Hojas naranjas y rojas cayendo, niebla espesa |
+| **Lago** | Congelado: el bote no sale, pero se puede cruzar el hielo a pie a un destino de la otra orilla (más peligroso). Pesca por un hueco en el hielo. | Deshielo: el bote vuelve a salir, con hielo flotando | Navegable, pesca buena | Navegable, más niebla en las expediciones |
+| **Necesidades** | El calor baja rápido; la estufa es vital | La lluvia moja y baja el calor; barro | La sed sube el doble; el calor casi no importa | El calor baja de noche |
+| **Día / noche** | Día corto, noche larga | Equilibrado | Día largo, noche corta | Noches cada vez más largas |
+| **Huellas** | En la nieve | En el barro | Ninguna | Sobre la hojarasca |
+| **Zombis** | Más lentos por el frío; algunos llegan por el hielo | Normales | Más rápidos y más numerosos | Aparecen de entre la niebla |
+| **Recursos** | Leña indispensable | Hongos y plantas silvestres | Bayas, más peces | Prepararse: secar carne y pescado, juntar leña para el invierno |
 
 **Sistemas de la demo:**
 - **Necesidades:** salud, hambre, sed, calor y energía (barras en la interfaz). El frío baja la salud si el calor llega a 0. La chimenea calienta dentro de la cabaña.
@@ -53,7 +71,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Armas:** hacha (cuerpo a cuerpo), escopeta (pocas balas, mucho ruido). Mejoras en un banco de trabajo con chatarra: más daño, más durabilidad.
 - **Inventario** en cuadrícula con barra rápida de 5 espacios. **Fabricación** en el banco de trabajo y **cocina** en la chimenea.
 - **Bote:** en el muelle se abre un menú de expedición con 3 destinos (gasolinera, cabaña vecina, campamento abandonado). Cada uno tiene riesgo, duración en horas del día y botín aleatorio, más un evento de texto con decisión (por ejemplo: "Oyes algo en el baño. ¿Abres la puerta?"). En la demo no hay niveles fuera del mapa; todo se resuelve en el menú.
-- **El lago se congela:** cada día el hielo avanza desde las orillas (se ve en el agua). En el día 3 el bote ya no puede salir y algunos zombis llegan cruzando el hielo por detrás.
+- **El lago según la estación:** ver la tabla de estaciones. Al pasar a invierno, el hielo avanza desde las orillas en la transición.
 - **Radio:** en la cabaña, al interactuar, suenan boletines de emergencia con texto en pantalla (uno por día) que cuentan cómo cayó la ciudad. Anselmo responde con un comentario gruñón.
 - **Zombis:** dos tipos en la demo. "Caminante": lento, aguanta golpes. "Corredor": rápido, débil, aparece desde la segunda noche. Usan navegación con NavigationAgent3D, golpean barricadas y persiguen ruido y al jugador.
 - **Interior y exterior, la casa "se abre" (vista de maqueta):** al entrar a la cabaña, en una transición suave de unos 0,4 s:
@@ -74,7 +92,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
   - Radio vieja sobre un mueble y un reloj de pared.
   - Abrigo colgado en un perchero, un cuadro o tapete en la pared, una ventana y una puerta trasera hacia el lago.
 - Postes de luz con cables que llegan a la cabaña. Se pueden cortar en una noche: la casa se queda sin luz eléctrica y sólo alumbra la estufa.
-- Camioneta vieja roja abandonada con nieve encima (de ahí sale chatarra), un columpio de llanta colgado de un árbol, leñera, letrina.
+- Camioneta vieja roja abandonada (con nieve encima en invierno; de ahí sale chatarra), un columpio de llanta colgado de un árbol, leñera, letrina.
 - Detrás de la cabaña: lago con muelle de madera y un bote de remos.
 - Sendero de entrada desde el bosque por donde llegan los zombis desde la ciudad (al fondo, un resplandor naranja de incendio en el horizonte).
 
@@ -82,7 +100,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 - **Low-poly de sombreado plano**, pocos polígonos y siluetas claras. Árboles desnudos de ramas angulosas y pinos de capas.
 - **Iluminación en dos tonos (*toon*)** con shader propio: luz y sombra en dos bandas nítidas, sombras largas de luna, color de sombra azul marino (no negro).
-- **Paleta nocturna:**
+- **Paleta de invierno de noche (la de las referencias).** Cada estación tiene su propia paleta en el mismo estilo plano: primavera de verdes suaves y grises de lluvia, verano de verdes intensos con noches azul violeta, otoño de naranjas y ocres con niebla. La luz cálida de la cabaña y el rojo de la bufanda se mantienen en todas.
 
   | Elemento | Color |
   |---|---|
@@ -97,8 +115,9 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Luces:** DirectionalLight3D de luna fría y suave. OmniLight3D naranja en ventanas, chimenea y faroles, que derraman luz cálida sobre la nieve.
 - **Ambiente:**
   - Niebla de profundidad suave, *bloom* leve en las luces cálidas y *tonemap* fílmico.
-  - Nieve cayendo con GPUParticles3D.
-  - Huellas que quedan en la nieve detrás del jugador y los zombis (decals o malla en el suelo, que se desvanecen con el tiempo).
+  - Partículas con GPUParticles3D según la estación: nieve, lluvia, luciérnagas u hojas.
+  - Huellas detrás del jugador y los zombis según la estación (decals o malla en el suelo, que se desvanecen con el tiempo).
+  - El suelo y los árboles cambian por estación con variantes de material o modelos alternos exportados desde Blender (por ejemplo `tree_bare.glb` y `tree_leaves.glb`).
 - **Día:** la misma dirección de arte con cielo gris azulado claro, nieve blanca y sombras celestes. Haz la transición día/noche animando la luz y el entorno.
 - **Cámara:** perspectiva alta en tres cuartos, unos 55° hacia abajo, FOV bajo (unos 35°). Sigue al jugador con suavidad, sin rotación libre en la demo, con zoom limitado con la rueda del ratón.
 - **Personaje:** Anselmo, figura robusta de abrigo oscuro, gorro y bufanda roja. Zombis con ropa de ciudad desteñida y piel gris verdosa, en el mismo estilo.
@@ -109,7 +128,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **HUD:**
   - Las cinco barras de necesidades, abajo a la izquierda.
   - Barra rápida, abajo al centro.
-  - Reloj del día y número de noche, arriba al centro.
+  - Reloj del día y número de noche, arriba al centro, con un ícono de la estación y cuánto falta en tiempo real para la siguiente ("Primavera en 5 h").
   - Munición y arma actual, abajo a la derecha.
   - Aviso grande de "NOCHE 1 · SE ACERCAN".
 - **Pantallas:** inventario y fabricación, cocina, expedición en bote, radio con texto, pausa con opciones (volumen y calidad), menú principal con la cabaña de fondo, muerte y fin de demo.
@@ -146,7 +165,7 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 2. **Arte del mundo:** modelos de Blender (cabaña, árboles, camioneta, muelle, bote), shader de dos tonos, luz de luna y ventanas, nieve, huellas, niebla y *bloom*. La captura debe parecerse a las referencias.
 3. **Supervivencia:** necesidades, inventario, leña, agua y hervir, pesca, cocina, ciclo día/noche.
 4. **Zombis y oleadas:** los dos tipos, navegación, ruido, barricadas con durabilidad, hacha, escopeta y mejoras.
-5. **Bote, hielo y radio:** menú de expediciones con eventos, lago que se congela, boletines.
+5. **Estaciones, bote y radio:** las cuatro estaciones en tiempo real con sus `SeasonData`, transición entre ellas, menú de depuración, expediciones en bote (y a pie por el hielo en invierno) y boletines. Muéstrame una captura del mismo encuadre en cada estación.
 6. **Interfaz y pulido:** todas las pantallas terminadas, menú principal, fin de demo, controles táctiles, ajuste de dificultad para que los 3 días se puedan ganar pero con tensión.
 
 **Al terminar**, dame:
