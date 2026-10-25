@@ -98,6 +98,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
   Al salir, todo vuelve a cerrarse. El interior se ilumina con luz naranja cálida que contrasta con el azul frío de afuera, y esa luz se derrama por la puerta y las ventanas sobre la nieve. Los zombis que se acercan se siguen viendo afuera.
 - **Guardado:** opcional en la demo. Si sobra tiempo, guardar al empezar cada día.
+- **Moneda del juego (Brasas):** se ganan al sobrevivir cada noche, cumplir tareas del día y matar zombis. Guárdalas en un monedero de jugador separado de la partida (`user://perfil.tres`). En la demo **no hay compras con dinero real**: el menú principal tiene un botón **Tienda** con 6 a 8 artículos de muestra (aspectos de Anselmo, un personaje, una mejora temporal) marcados como "Próximamente", con su precio en Brasas o Copos. Ver la sección "Economía y tienda" de `docs/VISION.md`.
 
 **Mapa (pequeño y a mano):**
 - Un claro de unos 60 × 60 m rodeado de bosque denso que hace de límite.

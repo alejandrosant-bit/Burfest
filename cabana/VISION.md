@@ -82,6 +82,36 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
 - **Estaciones en Multijugador:** en Historia y Solitario cambian cada 5 días de juego (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
 
+## Economía y tienda
+
+### Dos monedas (nombres provisionales)
+
+| Moneda | Cómo se consigue | Para qué |
+|---|---|---|
+| **Brasas** (moneda del juego) | Jugando: sobrevivir oleadas y noches, tareas del día, retos semanales, logros | Desbloquear personajes, aspectos básicos, mejoras permanentes pequeñas, mejoras temporales |
+| **Copos** (moneda premium) | Comprada con dinero real; un poco también con logros o pase de temporada | Aspectos exclusivos, personajes antes de tiempo, pase de temporada, decoraciones de la cabaña |
+
+### Qué hay en la tienda
+
+- **Aspectos:** ropa y accesorios para Anselmo y los demás personajes, armas, la cabaña (techo, luces, decoración), huellas, el bote.
+- **Otros personajes** jugables en Solitario y Multijugador, cada uno con su estilo y una pequeña ventaja propia que no rompa el equilibrio.
+- **Habilidades especiales y mejoras temporales:** por ejemplo, "+10 % de velocidad al reparar durante una partida", "cada vendaje cura más esta noche", "empezar con 5 tablas extra".
+- **Pase de temporada** por estación del año, con una ruta gratis y una de pago.
+
+### Reglas para no dañar el juego (recomendadas)
+
+1. **Lo que da ventaja se consigue con Brasas jugando.** Con dinero real se compran sobre todo aspectos y comodidad. Si una habilidad o mejora temporal se vende por Copos, también debe poder ganarse con Brasas.
+2. **En Multijugador público y en la tabla de clasificación**, las mejoras temporales compradas no cuentan, o hay una tabla aparte. Si no, ganan los que pagan y los demás se van.
+3. **Sin cajas sorpresa pagadas** (botín al azar con dinero real): en varios países están reguladas o prohibidas y las plataformas exigen mostrar probabilidades. Todo se compra sabiendo qué se recibe.
+4. **El modo Historia no se monetiza por dentro.** En PC, el juego tiene precio de compra con aspectos opcionales. En el celular puede ser gratis para jugar, con la tienda.
+5. **Precios claros** y sin trucos de presión ("oferta que termina en 5 minutos"). El jugador sabe cuánto gasta en dinero real.
+
+### Requisitos técnicos (cuando llegue el momento)
+
+- Los pagos con dinero real deben pasar por **Steam** en PC y por **Google Play Billing / App Store** en el celular. Las plataformas lo exigen y cobran comisión.
+- Las compras y las monedas se guardan y validan en un **servidor**, no sólo en el equipo del jugador (si no, se pueden piratear).
+- La tienda real llega con el multijugador. En la demo sólo se gana Brasas y se ve la tienda con artículos de muestra marcados "Próximamente".
+
 ## Orden de desarrollo
 
 1. Demo del modo Historia (en curso).
