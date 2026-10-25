@@ -43,9 +43,19 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 **Premisa:** Anselmo, un aldeano viejo y amargado, vive solo en una cabaña en mitad del bosque, junto a un lago. En la ciudad estalla un apocalipsis zombi y los zombis empiezan a llegar hasta su cabaña. Tiene que sobrevivir oleada tras oleada, reforzar la cabaña, mejorar sus armas y conseguir comida. Agua tiene ilimitada en el lago, pero debe hervirla. Detrás de la cabaña hay un muelle con un bote para buscar recursos en otros lugares.
 
 **Ciclo de juego:**
-- **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote.
+- **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote. El día **no es tranquilo**: hay zombis sueltos y, a veces, una oleada sorpresa (ver "Ritmo").
 - **Atardecer:** aviso de oleada ("Se acercan...").
-- **Noche (unos 3 minutos):** oleada de zombis. Sobrevivir defendiendo la cabaña.
+- **Noche (unos 3 minutos):** la oleada principal. Sobrevivir defendiendo la cabaña.
+
+**Ritmo: supervivencia, pero entretenida y con mucha acción**
+- Prioridad: que siempre haya algo que hacer y una razón para moverse. Nada de esperar sin hacer nada ni de gestión tediosa.
+- **Zombis sueltos de día:** grupos pequeños de 1 a 3 que salen del bosque cada pocos minutos de juego, más frecuentes cerca del sendero y cuando haces ruido.
+- **Oleada de día (rara):** una vez cada varios días (propuesta: 10 a 15 % de probabilidad por día desde el día 2), con aviso corto: un grito lejano y la pantalla un poco más oscura. Más pequeña que la de la noche, pero te pilla fuera de la cabaña.
+- **Eventos del día** (uno o dos por día, al azar): un zombi atrapado en la camioneta que guarda botín, un ciervo que se puede cazar, un árbol caído que bloquea el sendero (leña gratis), una caja que flota en la orilla del lago, la radio que anuncia algo, humo de otra cabaña a lo lejos.
+- **Tareas del día** (2 o 3, se ven en la interfaz): "Consigue 10 de leña", "Refuerza la ventana del cuarto", "Pesca 2 peces". Dan una pequeña recompensa al cumplirlas y guían a quien no sabe qué hacer.
+- **Que todo sea ágil:** recoger es automático al pasar cerca, fabricar y cocinar toman segundos, las necesidades bajan despacio, el inventario es simple.
+- **Combate con peso:** golpes que se sienten (ver "Sensación de golpe" en Animación), esquiva con una tecla (rodar o empujar) con un tiempo de espera, y zombis que reaccionan a cada golpe.
+- Los porcentajes y frecuencias van en un recurso de datos (`PacingData.tres`) para ajustarlos al probar.
 - La demo son **los últimos 3 días del otoño y la primera noche de invierno**. En el día 3 cae la primera nevada y el lago empieza a congelarse; la demo termina al sobrevivir la primera noche nevada, con la pantalla de "Fin de la demo" y estadísticas.
 
 **Las cuatro estaciones, por días de juego:**
@@ -91,12 +101,20 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 **Mapa (pequeño y a mano):**
 - Un claro de unos 60 × 60 m rodeado de bosque denso que hace de límite.
-- Cabaña de madera de dos ambientes (sala con chimenea y radio; cuarto con cama y banco de trabajo) y un porche con escalones. Interior según la referencia:
-  - Piso de tablas oscuras y paredes de madera cálida.
-  - Estufa de leña de hierro con una tetera encima (ahí se hierve el agua y se cocina).
-  - Mesa de madera con una silla.
-  - Radio vieja sobre un mueble y un reloj de pared.
-  - Abrigo colgado en un perchero, un cuadro o tapete en la pared, una ventana y una puerta trasera hacia el lago.
+- Cabaña de madera de dos ambientes y un porche con escalones. **Todas las estaciones de trabajo están dentro de la casa**, son interactivas y se ven bien desde arriba cuando la casa "se abre":
+
+  | Estación | Dónde | Para qué |
+  |---|---|---|
+  | **Estufa de leña** de hierro con tetera | Sala | Calor, hervir agua, cocinar. Consume leña. |
+  | **Banco de trabajo** con herramientas colgadas | Sala | Fabricar (tablas, trampas, vendajes) y mejorar armas |
+  | **Cama** | Cuarto | Dormir para recuperar energía y guardar la partida. No se puede dormir con zombis cerca. |
+  | **Radio** vieja sobre un mueble | Sala | Boletines diarios |
+  | **Despensa / armario** | Sala | Guardar comida, agua y materiales (almacén aparte del inventario) |
+  | **Estante de armas** junto a la puerta | Sala | Guardar y cambiar armas; ver munición |
+  | **Botiquín** en la pared | Cuarto | Guardar y usar vendajes |
+  | **Mesa** con silla y un mapa | Sala | Ver el mapa de destinos del bote y las tareas del día |
+
+  Decoración según la referencia: piso de tablas oscuras, paredes de madera cálida, reloj de pared, abrigo en un perchero, un cuadro o tapete, ventanas y una puerta trasera hacia el lago.
 - Postes de luz con cables que llegan a la cabaña. Se pueden cortar en una noche: la casa se queda sin luz eléctrica y sólo alumbra la estufa.
 - Camioneta vieja roja abandonada (con nieve encima en invierno; de ahí sale chatarra), un columpio de llanta colgado de un árbol, leñera, letrina.
 - Detrás de la cabaña: lago con muelle de madera y un bote de remos.
