@@ -115,7 +115,10 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 ## Plataformas y precio
 
 - **Primero PC (Steam)**, con la demo para Windows. Después el celular.
-- **Precio de referencia en Steam:** entre **US$ 9,99 y 14,99** en Acceso Anticipado (Historia + Solitario), y entre **US$ 14,99 y 19,99** en la versión 1.0 con multijugador. Usar los precios regionales que sugiere Steam (en Latinoamérica bajan bastante).
+- **Precio decidido:**
+  - **PC (Steam): US$ 7,99**, con los precios regionales que sugiere Steam. Incluye todos los modos, sin anuncios, y un **paquete de bienvenida** (aspecto exclusivo de Anselmo y Brasas iniciales) para que quien pagó sienta la diferencia frente al celular.
+  - **Celular: gratis para jugar.** Se sostiene con la tienda (aspectos, personajes, pase de temporada, Copos) y, opcionalmente, con **anuncios con recompensa** que el jugador elige ver (por ejemplo, ver un anuncio para duplicar las Brasas de la noche). Nunca anuncios obligatorios en medio de la partida.
+  - En celular, la tienda puede vender más comodidad que en PC, pero siguen valiendo las reglas: nada de cajas sorpresa pagadas y la tabla de clasificación sin ventajas compradas.
 - **Demo gratis en Steam** y participación en un **Steam Next Fest** para juntar listas de deseados antes del lanzamiento.
 
 ## Orden de desarrollo
