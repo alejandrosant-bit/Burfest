@@ -82,6 +82,30 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
 - **Estaciones en Multijugador:** en Historia y Solitario cambian cada 5 días de juego (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
 
+## Exploración en bote (fase posterior a la demo)
+
+En la demo, el bote es sólo un menú de expediciones. En el juego completo se vuelve un **mapa explorable**:
+
+1. Desde el muelle de la cabaña, el bote sale por el lago y un río que lleva **al mar**. Pantalla de carga.
+2. Aparece el **mapa del mundo**: el jugador elige el destino entre los lugares que tenga desbloqueados según su nivel.
+3. Cada destino es un **nivel jugable** con dificultad propia: pueblos, ciudades y lugares específicos (gasolinera, hospital, base militar, puerto, supermercado...). Los más difíciles tienen más zombis, zombis especiales y mejor botín.
+4. Se entra a buscar recursos y se vuelve en el bote a la cabaña antes de que caiga la noche (o se arriesga a quedarse).
+
+**Botín por rareza:**
+
+| Rareza | Ejemplos |
+|---|---|
+| Normal | Materiales de construcción, comida, munición común |
+| Rara | Armas mejores, piezas para mejoras, medicinas |
+| Especial | Armas con efectos (fuego, perforación), herramientas avanzadas |
+| Legendaria | Armas únicas con nombre e historia, muy escasas, en los lugares más difíciles |
+
+**Supervivientes:** en los destinos aparecen otros sobrevivientes:
+- **Buenos:** se puede comerciar con ellos, darles ayuda a cambio de recompensas o misiones, o invitarlos a la zona de la cabaña en el futuro.
+- **Malos:** saqueadores que roban, tienden emboscadas o pelean por el botín.
+
+Cada encuentro trae decisiones con consecuencias.
+
 ## Economía y tienda
 
 ### Dos monedas (Brasas decidido; el nombre de la premium es provisional)
