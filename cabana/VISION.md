@@ -39,6 +39,14 @@ Las mismas cuatro ramas de habilidad existen en los dos modos (Medicina, Caza, C
 | Progreso | Barras de experiencia por rama; cada nivel desbloquea mejoras (curar más rápido, más daño con arco, muros más resistentes...) | El rol elegido arranca con sus habilidades extra y sube de nivel en la partida |
 | Equilibrio | Al cubrir todo solo, cada rama sube más lento que en multijugador | Los roles se complementan; nadie lo hace todo |
 
+### Salud y curación
+
+- **Regeneración natural:** cuando un jugador deja de recibir daño durante unos segundos (propuesta: 8 s), recupera vida poco a poco (propuesta: 1 % por segundo). Si lo vuelven a golpear, la regeneración se corta y el contador vuelve a empezar.
+- **Vendajes:** curan mucho más y de inmediato. Se consiguen de dos formas:
+  - Los **fabrica y entrega el médico** (los suyos curan más).
+  - Salen en las **cajas de suministro del helicóptero**.
+- **Propuesta para que los vendajes importen:** la regeneración natural sólo llega hasta el 60 % de la vida; para llenarla del todo hacen falta vendajes.
+
 ### Estructuras
 
 - **Muros de madera** alrededor de la cabaña, construidos por el constructor. Los zombis los golpean hasta romperlos.
