@@ -82,12 +82,16 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
 - **Estaciones en Multijugador:** en Historia y Solitario cambian cada 5 días de juego (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
 
+## Historia
+
+Ver `HISTORIA.md`: historia con giros contada por la radio, los supervivientes y los objetos hallados. La introducción va en la demo.
+
 ## Exploración en bote (fase posterior a la demo)
 
 En la demo, el bote es sólo un menú de expediciones. En el juego completo se vuelve un **mapa explorable**:
 
-1. Desde el muelle de la cabaña, el bote sale por el lago y un río que lleva **al mar**. Pantalla de carga.
-2. Aparece el **mapa del mundo**: el jugador elige el destino entre los lugares que tenga desbloqueados según su nivel.
+1. **El lago es gigante y es el mapa del mundo.** Desde el muelle de la cabaña, el bote sale a navegar y se ve el lago enorme desde arriba, como un mapa: en sus orillas e islas aparecen ciudades, pueblos y lugares, con niebla sobre los que aún no se han descubierto.
+2. El jugador elige a dónde ir entre los lugares que tenga desbloqueados según su nivel. Durante la travesía pueden aparecer **eventos aleatorios en el agua**: un bote a la deriva con botín, supervivientes pidiendo ayuda, saqueadores, una tormenta. Al llegar, pantalla de carga.
 3. Cada destino es un **nivel jugable** con dificultad propia: pueblos, ciudades y lugares específicos (gasolinera, hospital, base militar, puerto, supermercado...). Los más difíciles tienen más zombis, zombis especiales y mejor botín.
 4. Se entra a buscar recursos y se vuelve en el bote a la cabaña antes de que caiga la noche (o se arriesga a quedarse).
 

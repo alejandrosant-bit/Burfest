@@ -33,7 +33,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
   - Configura **Git LFS** para archivos pesados: `*.blend`, `*.glb`, `*.fbx`, `*.png`, `*.wav`, `*.ogg`. Pídeme permiso si hay que instalar Git LFS.
   - Conecta con mi repositorio privado `old-man-winter` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
   - Haz un commit con mensaje claro al terminar cada tarea y **sube (push) al final de cada fase**, cuando yo apruebe la captura. Trabaja en una rama por fase (`fase-1-bloqueo`, `fase-2-arte`...) y únela a `main` cuando la apruebe.
-  - Copia `PROMPT_CLAUDE_CODE.md` y `VISION.md` a una carpeta `docs/` del repositorio.
+  - Copia `PROMPT_CLAUDE_CODE.md`, `VISION.md` y `HISTORIA.md` a una carpeta `docs/` del repositorio.
 - Detente y repórtame.
 
 ## El juego
@@ -41,6 +41,16 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 **Título:** ***Old Man Winter*** (igual en los dos idiomas; en español se puede acompañar de "El viejo invierno"). El doble sentido es parte del tono: Anselmo es el viejo que sobrevive al invierno.
 
 **Premisa:** Anselmo, un aldeano viejo y amargado, vive solo en una cabaña en mitad del bosque, junto a un lago. En la ciudad estalla un apocalipsis zombi y los zombis empiezan a llegar hasta su cabaña. Tiene que sobrevivir oleada tras oleada, reforzar la cabaña, mejorar sus armas y conseguir comida. Agua tiene ilimitada en el lago, pero debe hervirla. Detrás de la cabaña hay un muelle con un bote para buscar recursos en otros lugares.
+
+**Introducción jugable (lo primero que se ve al empezar Historia):** sigue la sección "Introducción" de `docs/HISTORIA.md`. Resumen:
+1. De noche, Anselmo mira la televisión en su sillón.
+2. La TV se llena de estática y la radio suena sola con una voz desesperada que se corta.
+3. Anselmo se levanta molesto. Pasan helicópteros (luces que barren la ventana, vibración y sonido) y se oyen gritos y disparos lejanos.
+4. Anselmo apaga la luz y se esconde.
+5. Pantalla negra: "3 días después".
+6. Sale con la escopeta, les habla a los zombis ("¡Esto es propiedad privada!"), no responden y les dispara.
+
+Ese primer combate es el tutorial. Hazlo con la cámara del juego más algunos planos cercanos, barras de cine y subtítulos traducidos; se puede saltar con una tecla. Los boletines diarios de la radio en la demo son los primeros del Acto 1 de `HISTORIA.md`, sin revelar todavía el giro 1.
 
 **Ciclo de juego:**
 - **Día (unos 4 minutos):** explorar el mapa, cortar leña, pescar, sacar agua, reparar y construir barricadas, salir en bote. El día **no es tranquilo**: hay zombis sueltos y, a veces, una oleada sorpresa (ver "Ritmo").
@@ -115,7 +125,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
   | **Botiquín** en la pared | Cuarto | Guardar y usar vendajes |
   | **Mesa** con silla y un mapa | Sala | Ver el mapa de destinos del bote y las tareas del día |
 
-  Decoración según la referencia: piso de tablas oscuras, paredes de madera cálida, reloj de pared, abrigo en un perchero, un cuadro o tapete, ventanas y una puerta trasera hacia el lago.
+  Además, un **sillón frente a una TV vieja** (para la introducción), fotos de su hija Clara y la carta de despido de la planta de agua enmarcada con rabia. Decoración según la referencia: piso de tablas oscuras, paredes de madera cálida, reloj de pared, abrigo en un perchero, un cuadro o tapete, ventanas y una puerta trasera hacia el lago.
 - Postes de luz con cables que llegan a la cabaña. Se pueden cortar en una noche: la casa se queda sin luz eléctrica y sólo alumbra la estufa.
 - Camioneta vieja roja abandonada (con nieve encima en invierno; de ahí sale chatarra), un columpio de llanta colgado de un árbol, leñera, letrina.
 - Detrás de la cabaña: lago con muelle de madera y un bote de remos.
@@ -167,7 +177,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
   - **Caminante:** arrastra un pie y se tambalea.
   - **Corredor:** espasmódico, inclinado hacia adelante.
 - **Lista mínima para la demo** (orden de prioridad):
-  - **Anselmo:** idle, caminar, correr, caminar con arma apuntando, hachazo (dos variantes), disparo y recarga de escopeta, cortar leña, martillar tabla, beber, comer, recibir golpe, caer o morir, y abrir la puerta.
+  - **Anselmo:** sentado en el sillón, levantarse, asomarse por la ventana, gesto de hablar o gritar, idle, caminar, correr, caminar con arma apuntando, hachazo (dos variantes), disparo y recarga de escopeta, cortar leña, martillar tabla, beber, comer, recibir golpe, caer o morir, y abrir la puerta.
   - **Zombis:** idle, caminar, correr (corredor), atacar (dos variantes), golpear barricada, recibir golpe y morir (combinado con *ragdoll*).
 - Exporta todas las acciones de un personaje en su `.glb` como animaciones con nombre (`anselmo_caminar`, `zombi_ataque_1`...), en ciclo las que lo requieran y sin desplazamiento de la raíz (*in place*).
 - **Un solo esqueleto humanoide** para Anselmo y los zombis, para reutilizar trabajo (por ejemplo, la base de "recibir golpe"). En Godot, usa BoneMap con SkeletonProfileHumanoid.
