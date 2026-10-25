@@ -63,7 +63,7 @@ Regla de diseño: **los roles dan ventaja, no exclusividad.** Nadie debe quedar 
 - **Vendajes:** curan mucho más y de inmediato. Se consiguen de dos formas:
   - Los **fabrica y entrega el médico** (los suyos curan más).
   - Salen en las **cajas de suministro del helicóptero**.
-- **Propuesta para que los vendajes importen:** la regeneración natural sólo llega hasta el 60 % de la vida; para llenarla del todo hacen falta vendajes.
+- **Límite de la regeneración (decidido):** la regeneración natural sólo llega hasta el **60 %** de la vida. Para llenarla del todo hacen falta vendajes.
 
 ### Estructuras
 
