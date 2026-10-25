@@ -125,8 +125,20 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 ## Animación (que se sienta fluida)
 
-- **Origen de las animaciones:** usa **Mixamo** (gratis, en la opción "In Place") como base para caminar, correr, idle, golpear con el hacha, disparar, recargar, morir y las caminatas y ataques de zombi. No inventes animaciones de personaje con keyframes por script: quedan rígidas. Si falta alguna, avísame y la hacemos en Cascadeur o en Blender a mano.
-- **Un solo esqueleto humanoide** para Anselmo y los zombis. Usa el reasignado (*retargeting*) de Godot (BoneMap con SkeletonProfileHumanoid) para compartir animaciones.
+- **Todas las animaciones son propias, hechas en Blender** (nada de Mixamo), para que el juego tenga personalidad única. Flujo para cada animación:
+  1. Arma el esqueleto con **Rigify** (incluido en Blender), con controles de IK para pies y manos.
+  2. Escribe un script de Python que haga un **primer borrador** con fotogramas clave aplicando principios de animación: anticipación, exageración, arcos, superposición y peso. No hagas poses rectas ni movimiento lineal; usa curvas suaves en el Graph Editor.
+  3. Renderiza una **vista previa** (MP4 o secuencia PNG desde la cámara del juego, en Eevee y a baja resolución) y muéstramela.
+  4. Yo la apruebo, te pido cambios o la pulo a mano en Blender. **No integres en Godot una animación que no haya aprobado.**
+- **Personalidad:**
+  - **Anselmo** es viejo y amargado: camina algo encorvado, con pasos pesados y una leve cojera; corre con esfuerzo; hace un gesto de fastidio al quedarse quieto mucho tiempo.
+  - **Caminante:** arrastra un pie y se tambalea.
+  - **Corredor:** espasmódico, inclinado hacia adelante.
+- **Lista mínima para la demo** (orden de prioridad):
+  - **Anselmo:** idle, caminar, correr, caminar con arma apuntando, hachazo (dos variantes), disparo y recarga de escopeta, cortar leña, martillar tabla, beber, comer, recibir golpe, caer o morir, y abrir la puerta.
+  - **Zombis:** idle, caminar, correr (corredor), atacar (dos variantes), golpear barricada, recibir golpe y morir (combinado con *ragdoll*).
+- Exporta todas las acciones de un personaje en su `.glb` como animaciones con nombre (`anselmo_caminar`, `zombi_ataque_1`...), en ciclo las que lo requieran y sin desplazamiento de la raíz (*in place*).
+- **Un solo esqueleto humanoide** para Anselmo y los zombis, para reutilizar trabajo (por ejemplo, la base de "recibir golpe"). En Godot, usa BoneMap con SkeletonProfileHumanoid.
 - **AnimationTree, no AnimationPlayer suelto:**
   - **Locomoción** con BlendSpace2D según la velocidad y la dirección relativa a donde mira (idle, caminar, correr y caminar de lado al apuntar).
   - **Máquina de estados** con fundidos cortos de 0,1 a 0,2 s entre estados.
