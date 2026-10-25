@@ -63,6 +63,7 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 **Sistemas de la demo:**
 - **Necesidades:** salud, hambre, sed, calor y energía (barras en la interfaz). El frío baja la salud si el calor llega a 0. La chimenea calienta dentro de la cabaña.
+- **Salud y curación:** tras 8 s sin recibir daño, la vida se regenera sola al 1 % por segundo, pero **sólo hasta el 60 %**. Si recibe daño, la regeneración se corta y el contador se reinicia. Para pasar del 60 % hacen falta **vendajes**: se fabrican en el banco de trabajo con tela y salen en las expediciones del bote. Deja estos valores en un recurso de datos para poder ajustarlos.
 - **Agua:** sacar agua del lago da "agua sucia". Hervirla en la chimenea da "agua potable". Beber agua sucia tiene riesgo de enfermarse.
 - **Comida:** pescar en el muelle (minijuego simple de un botón con tiempo), latas conseguidas en el bote, cocinar en la chimenea.
 - **Leña:** cortar árboles marcados con el hacha. Hace ruido.

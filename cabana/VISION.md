@@ -59,6 +59,8 @@ Regla de diseño: **los roles dan ventaja, no exclusividad.** Nadie debe quedar 
 
 ### Salud y curación
 
+Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). En Historia y Solitario, Anselmo fabrica sus propios vendajes con su rama de Medicina y también los encuentra en expediciones o cajas.
+
 - **Regeneración natural:** cuando un jugador deja de recibir daño durante unos segundos (propuesta: 8 s), recupera vida poco a poco (propuesta: 1 % por segundo). Si lo vuelven a golpear, la regeneración se corta y el contador vuelve a empezar.
 - **Vendajes:** curan mucho más y de inmediato. Se consiguen de dos formas:
   - Los **fabrica y entrega el médico** (los suyos curan más).
