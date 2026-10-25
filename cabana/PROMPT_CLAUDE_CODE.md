@@ -31,14 +31,14 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Control de versiones con GitHub:**
   - Inicializa git con un `.gitignore` para Godot (`.godot/`, `_capturas/`, `*.blend1`, exportaciones de builds).
   - Configura **Git LFS** para archivos pesados: `*.blend`, `*.glb`, `*.fbx`, `*.png`, `*.wav`, `*.ogg`. Pídeme permiso si hay que instalar Git LFS.
-  - Conecta con mi repositorio privado `until-thaw` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
+  - Conecta con mi repositorio privado `old-man-winter` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
   - Haz un commit con mensaje claro al terminar cada tarea y **sube (push) al final de cada fase**, cuando yo apruebe la captura. Trabaja en una rama por fase (`fase-1-bloqueo`, `fase-2-arte`...) y únela a `main` cuando la apruebe.
   - Copia `PROMPT_CLAUDE_CODE.md` y `VISION.md` a una carpeta `docs/` del repositorio.
 - Detente y repórtame.
 
 ## El juego
 
-**Título:** ***Until Thaw*** (en español, subtítulo "Hasta el deshielo"). El protagonista sigue siendo Anselmo.
+**Título:** ***Old Man Winter*** (igual en los dos idiomas; en español se puede acompañar de "El viejo invierno"). El doble sentido es parte del tono: Anselmo es el viejo que sobrevive al invierno.
 
 **Premisa:** Anselmo, un aldeano viejo y amargado, vive solo en una cabaña en mitad del bosque, junto a un lago. En la ciudad estalla un apocalipsis zombi y los zombis empiezan a llegar hasta su cabaña. Tiene que sobrevivir oleada tras oleada, reforzar la cabaña, mejorar sus armas y conseguir comida. Agua tiene ilimitada en el lago, pero debe hervirla. Detrás de la cabaña hay un muelle con un bote para buscar recursos en otros lugares.
 
