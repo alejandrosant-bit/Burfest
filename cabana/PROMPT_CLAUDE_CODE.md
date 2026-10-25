@@ -31,14 +31,14 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Control de versiones con GitHub:**
   - Inicializa git con un `.gitignore` para Godot (`.godot/`, `_capturas/`, `*.blend1`, exportaciones de builds).
   - Configura **Git LFS** para archivos pesados: `*.blend`, `*.glb`, `*.fbx`, `*.png`, `*.wav`, `*.ogg`. Pídeme permiso si hay que instalar Git LFS.
-  - Conecta con mi repositorio privado `el-viejo-del-lago` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
+  - Conecta con mi repositorio privado `until-thaw` en GitHub (pregúntame la URL). Si no tienes acceso, dime cómo darte permiso; no crees repositorios por tu cuenta.
   - Haz un commit con mensaje claro al terminar cada tarea y **sube (push) al final de cada fase**, cuando yo apruebe la captura. Trabaja en una rama por fase (`fase-1-bloqueo`, `fase-2-arte`...) y únela a `main` cuando la apruebe.
   - Copia `PROMPT_CLAUDE_CODE.md` y `VISION.md` a una carpeta `docs/` del repositorio.
 - Detente y repórtame.
 
 ## El juego
 
-**Título provisional:** "El Viejo del Lago".
+**Título:** ***Until Thaw*** (en español, subtítulo "Hasta el deshielo"). El protagonista sigue siendo Anselmo.
 
 **Premisa:** Anselmo, un aldeano viejo y amargado, vive solo en una cabaña en mitad del bosque, junto a un lago. En la ciudad estalla un apocalipsis zombi y los zombis empiezan a llegar hasta su cabaña. Tiene que sobrevivir oleada tras oleada, reforzar la cabaña, mejorar sus armas y conseguir comida. Agua tiene ilimitada en el lago, pero debe hervirla. Detrás de la cabaña hay un muelle con un bote para buscar recursos en otros lugares.
 
@@ -169,6 +169,14 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 - **Sensación de golpe (*game feel*):** congelar la imagen 40 a 60 ms al conectar un hachazo, sacudida corta de cámara, destello en el zombi golpeado, retroceso del arma y partículas de nieve o astillas. Esto hace que el combate se sienta fluido aunque las animaciones sean simples.
 - **Rendimiento con muchos zombis:** los zombis lejanos o fuera de pantalla actualizan la animación con menos frecuencia (VisibleOnScreenNotifier3D). Meta: 60 fps estables con 30 zombis en pantalla.
 
+## Idiomas: inglés y español desde el primer día
+
+- **Ningún texto visible va escrito en el código.** Usa el sistema de traducción de Godot: archivo `localization/textos.csv` con columnas `keys,en,es` y `tr("CLAVE")` en todas partes (menús, objetivos, objetos, radio, eventos del bote, pantallas).
+- Idioma inicial según el del sistema operativo; si no es español, inglés. Selector de idioma en Opciones y en el menú principal, con cambio al instante.
+- La fuente debe tener tildes, ñ, ¿ y ¡.
+- Deja espacio en la interfaz: el español suele ocupar entre un 20 y un 30 % más que el inglés. Prueba cada pantalla en los dos idiomas y muéstrame capturas de ambos en la fase de interfaz.
+- Tono: los comentarios gruñones de Anselmo deben sonar naturales en cada idioma, no traducidos palabra por palabra. Español latino neutro.
+
 ## Interfaz (terminada en la demo)
 
 - Estilo limpio, plano y legible, con la paleta del juego; fuente libre con licencia OFL de Google Fonts.
@@ -213,7 +221,7 @@ tools/blender/   un script de Python por modelo o kit (cabin.py, trees.py, truck
 3. **Supervivencia:** necesidades, inventario, leña, agua y hervir, pesca, cocina, ciclo día/noche.
 4. **Zombis y oleadas:** los dos tipos, navegación, ruido, barricadas con durabilidad, hacha, escopeta y mejoras.
 5. **Estaciones, bote y radio:** las cuatro estaciones por días de juego con sus `SeasonData`, transición entre ellas, menú de depuración, expediciones en bote (y a pie por el hielo en invierno) y boletines. Muéstrame una captura del mismo encuadre en cada estación.
-6. **Interfaz y pulido:** todas las pantallas terminadas, menú principal, fin de demo, controles táctiles, ajuste de dificultad para que los 3 días se puedan ganar pero con tensión.
+6. **Interfaz y pulido:** todas las pantallas terminadas en inglés y en español, menú principal, fin de demo, controles táctiles, ajuste de dificultad para que los 3 días se puedan ganar pero con tensión.
 
 **Al terminar**, dame:
 - Cómo exportar el ejecutable para Windows.

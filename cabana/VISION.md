@@ -1,4 +1,6 @@
-# El Viejo del Lago · Visión del juego completo
+# Until Thaw (Hasta el deshielo) · Visión del juego completo
+
+Juego en **inglés y español** desde el primer día.
 
 Documento de referencia para después de la demo. La demo actual es sólo del **modo Historia** (ver `PROMPT_CLAUDE_CODE.md`).
 
