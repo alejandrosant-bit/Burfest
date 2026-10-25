@@ -84,7 +84,7 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 
 ## Economía y tienda
 
-### Dos monedas (nombres provisionales)
+### Dos monedas (Brasas decidido; el nombre de la premium es provisional)
 
 | Moneda | Cómo se consigue | Para qué |
 |---|---|---|
@@ -111,6 +111,12 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - Los pagos con dinero real deben pasar por **Steam** en PC y por **Google Play Billing / App Store** en el celular. Las plataformas lo exigen y cobran comisión.
 - Las compras y las monedas se guardan y validan en un **servidor**, no sólo en el equipo del jugador (si no, se pueden piratear).
 - La tienda real llega con el multijugador. En la demo sólo se gana Brasas y se ve la tienda con artículos de muestra marcados "Próximamente".
+
+## Plataformas y precio
+
+- **Primero PC (Steam)**, con la demo para Windows. Después el celular.
+- **Precio de referencia en Steam:** entre **US$ 9,99 y 14,99** en Acceso Anticipado (Historia + Solitario), y entre **US$ 14,99 y 19,99** en la versión 1.0 con multijugador. Usar los precios regionales que sugiere Steam (en Latinoamérica bajan bastante).
+- **Demo gratis en Steam** y participación en un **Steam Next Fest** para juntar listas de deseados antes del lanzamiento.
 
 ## Orden de desarrollo
 
