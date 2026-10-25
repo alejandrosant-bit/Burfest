@@ -125,11 +125,19 @@ Vas a construir conmigo la demo jugable de un juego de supervivencia zombi en **
 
 ## Animación (que se sienta fluida)
 
-- **Todas las animaciones son propias, hechas en Blender** (nada de Mixamo), para que el juego tenga personalidad única. Flujo para cada animación:
-  1. Arma el esqueleto con **Rigify** (incluido en Blender), con controles de IK para pies y manos.
-  2. Escribe un script de Python que haga un **primer borrador** con fotogramas clave aplicando principios de animación: anticipación, exageración, arcos, superposición y peso. No hagas poses rectas ni movimiento lineal; usa curvas suaves en el Graph Editor.
-  3. Renderiza una **vista previa** (MP4 o secuencia PNG desde la cámara del juego, en Eevee y a baja resolución) y muéstramela.
-  4. Yo la apruebo, te pido cambios o la pulo a mano en Blender. **No integres en Godot una animación que no haya aprobado.**
+- **Base de Mixamo con toque único en Blender.** Flujo:
+  1. Modelas en Blender a Anselmo y a los zombis *low-poly* en pose T y los exportas en FBX.
+  2. **Yo** los subo a Mixamo para el esqueleto automático y descargo las animaciones de la lista de abajo: FBX, 30 fps, "In Place", la primera "With Skin" y las demás "Without Skin". Las dejo en `assets/mixamo/<personaje>/`. Dime exactamente cuáles descargar y con qué nombre de archivo.
+  3. Importas todo en Blender con un script y aplicas la **capa de personalidad** con capas aditivas en el NLA o ajustando las curvas por script:
+     - Cambios de postura (encorvar la espalda, bajar los hombros, inclinar la cabeza).
+     - Asimetrías (cojera: un paso más corto y la cadera cae de un lado).
+     - Cambios de ritmo (pausas, aceleraciones, más peso al pisar).
+     - Exageración o suavizado de la amplitud.
+     - Ruido o espasmos para los zombis.
+     - Variantes a partir de una misma animación (espejo, velocidad, mezcla de dos).
+  4. Renderizas una **vista previa** de cada animación (MP4 o PNG desde la cámara del juego, Eevee a baja resolución), lado a lado con la versión original de Mixamo, y me la muestras.
+  5. Yo apruebo o pido cambios. **No integres en Godot una animación que no haya aprobado.**
+  6. Exportas a `.glb` con animaciones nombradas.
 - **Personalidad:**
   - **Anselmo** es viejo y amargado: camina algo encorvado, con pasos pesados y una leve cojera; corre con esfuerzo; hace un gesto de fastidio al quedarse quieto mucho tiempo.
   - **Caminante:** arrastra un pie y se tambalea.
