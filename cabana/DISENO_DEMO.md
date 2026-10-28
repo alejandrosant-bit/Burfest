@@ -154,6 +154,8 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 
 ## Flujo de trabajo con dos PCs
 
+> **Por ahora se trabaja con un solo PC (el PC 1) para todo.** Esa sesión de Claude Code hace también el trabajo de arte siguiendo `PROMPT_PC2_BLENDER.md`, por tandas: primero los modelos que pide una fase, luego su integración en Godot, sin abrir Blender y Godot a la vez. Las carpetas, las ramas (`arte/...` y `codigo/...`) y `docs/ASSETS.md` se usan igual desde ya, para que cuando se sume el compañero sólo haya que pasarle el prompt del PC 2 y las tareas pendientes de la lista.
+
 | | PC 1 · Programación | PC 2 · Arte |
 |---|---|---|
 | Equipo | Vega 8, 8 GB | PC potente |

@@ -25,6 +25,10 @@ Vas a programar conmigo la **demo v0.1 de *Old Man Winter***, un juego de superv
 2. **Captura automática:** una bandera de depuración (`--screenshot`) que arranca el juego, espera unos segundos, guarda `res://_capturas/fase_N.png` y cierra. Mira la imagen y compárala con la dirección de arte antes de reportar.
 3. **Rendimiento:** mide los fps en este PC en la escena más cargada de la fase y dímelos.
 
+## Por ahora, un solo PC
+
+Mientras mi compañero no se sume, **también haces el arte en Blender en este mismo PC**: lee y sigue `docs/PROMPT_PC2_BLENDER.md` para todo lo de modelos y animaciones. Trabaja por tandas (modelos de la fase, luego integración), usa Blender sin ventana (`--background`) siempre que puedas y no tengas Blender y Godot abiertos a la vez. Mantén igual las ramas `arte/...` y `codigo/...` y la lista `docs/ASSETS.md`, para poder delegar después.
+
 ## Este PC
 
 - Gráfica **AMD Radeon Vega 8 integrada y 8 GB de RAM**. Renderizador **Mobile**. Meta: **60 fps estables** aquí.
