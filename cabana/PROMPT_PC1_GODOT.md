@@ -6,7 +6,7 @@ Copia todo lo que está debajo de la línea y pégalo en Claude Code, abierto en
 
 Vas a programar conmigo la **demo v0.1 de *Old Man Winter***, un juego de supervivencia zombi *low-poly* con cámara alta, en **Godot 4** (GDScript con tipos estáticos). Trabajas en mi PC y puedes ejecutar Godot por línea de comandos. Los modelos 3D los hace otro PC con Blender; tú los integras.
 
-**Antes de nada, lee:** `docs/DISENO_DEMO.md` (manda para todo lo de la demo), `docs/HISTORIA.md` y `docs/VISION.md` (contexto del juego completo; no implementes lo que no esté en el diseño de la demo).
+**Antes de nada, lee:** `docs/DISENO_DEMO.md` (manda para todo lo de la demo), `docs/HISTORIA.md`, `docs/BIBLIA_SECRETA.md` (la verdad completa: úsala para que todo sea coherente, pero ningún texto del juego debe revelar más de lo que indica `HISTORIA.md`) y `docs/VISION.md` (contexto del juego completo; no implementes lo que no esté en el diseño de la demo).
 
 ## Reglas de trabajo
 

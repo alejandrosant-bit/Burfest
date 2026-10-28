@@ -21,12 +21,13 @@ Fuente común para los dos PCs. Si algo aquí contradice a `VISION.md`, manda es
 
 ## Ciclo de juego
 
-- **Muerte permanente (modo Historia):** si Anselmo muere, la partida se pierde y se empieza de nuevo. Sólo hay un guardado automático al amanecer, para poder salir del juego, y se borra al morir.
+- **Muerte permanente como parte de la historia (modo Historia):** si Anselmo muere, la partida se pierde y **despierta otra vez en su sillón: el invierno se repite** (ver `HISTORIA.md`). Sólo hay un guardado automático al amanecer, para poder salir del juego, y se borra al morir.
+- **Lo que sobrevive entre partidas** (en el perfil del jugador, no en la partida): las Brasas, una marca tallada por cada invierno vivido, notas nuevas con la letra de Anselmo que aparecen en la cabaña y cambios en las fotos de Clara. El contenido de cada nota sale de una lista en datos, según cuántas veces se ha muerto.
 - **Día:** registrar la cabaña, cortar leña, picar piedra, cazar, pescar en el hueco del hielo, construir, expediciones. Hay zombis sueltos y, rara vez, una horda de día.
 - **Noche:** la oleada principal. Usar el generador atrae una horda más grande.
 - **Duración:** en invierno, día de unos 3 minutos y noche de unos 4 (el invierno es la estación de noches largas). Todo se ajusta en datos.
 - **Ritmo:** siempre hay algo que hacer. Eventos al azar de día, tareas del día con recompensa, recoger es automático, fabricar toma segundos.
-- **Final de la demo:** al sobrevivir la quinta noche, la locutora de la radio dice algo inquietante (gancho) y aparece "Fin de la demo" con estadísticas.
+- **Final de la demo:** al sobrevivir la quinta noche, la locutora dice "Anselmo, apaga la radio antes de dormir. Siempre se te olvida" (él nunca le ha hablado) y aparece "Fin de la demo" con estadísticas.
 
 ## Estaciones (el invierno primero)
 
@@ -72,6 +73,7 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 - **Electricidad o método rústico:**
   - **A oscuras o con fuego:** seguro.
   - **Generador de gasolina:** ilumina la casa, carga la radio y deja usar más estaciones, pero **su ruido atrae hordas nocturnas más grandes**. El jugador decide.
+- **Regla de la estufa:** mientras la estufa arde, los zombis no cruzan la puerta de la cabaña (golpean barricadas y ventanas, pero no entran). Si se apaga de noche, entran. Es una regla de la historia y el centro de la tensión nocturna: la leña es vida. Hay que probar el balance en el prototipo.
 - **La casa "se abre" (vista de maqueta):** al entrar desaparece el techo y bajan las paredes que dan a la cámara. Es igual en los edificios de las zonas de expedición.
 
 ## Compañero: el perro
@@ -99,6 +101,7 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 
 - En la cabaña (y con un **walkie-talkie** que se encuentra después, también fuera de ella) se sintoniza a una **locutora misteriosa** que transmite desde un lugar desconocido, al que no se puede ir.
 - Sus boletines cuentan lo que pasa y reportan emergencias, por ejemplo "Suministros médicos abandonados en Isla Marbreich". Cada uno **marca automáticamente una ubicación en el Diario de Misiones**.
+- La radio **sólo capta a la locutora cerca del agua o del hielo**; lejos del lago, sólo estática (regla de la historia).
 - Ver `HISTORIA.md` para el contenido.
 
 ## Zonas (escenas independientes)
