@@ -2,7 +2,9 @@
 
 Juego en **inglés y español** desde el primer día.
 
-Documento de referencia para después de la demo. La demo actual es sólo del **modo Historia** (ver `PROMPT_CLAUDE_CODE.md`).
+Documento de referencia para el juego completo. Lo que entra en la **demo v0.1** está en `DISENO_DEMO.md`, que manda si algo no coincide.
+
+**Decisiones generales:** el juego empieza en **invierno** (la estación más larga y difícil, 10 días; las demás duran 5); el modo Historia tiene **muerte permanente**; el compañero de Anselmo es un **perro**.
 
 ## Menú principal
 
@@ -80,7 +82,7 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 - **Revivir:** al caer, el jugador queda en el suelo unos segundos y cualquiera lo puede levantar; el médico lo hace más rápido y con más vida.
 - **Tabla de clasificación** de oleadas sobrevividas y un **reto semanal** con la misma cabaña y las mismas condiciones para todos.
 - **Oleadas especiales** cada cierto número: zombi gigante, noche de niebla, llegada del invierno.
-- **Estaciones en Multijugador:** en Historia y Solitario cambian cada 5 días de juego (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
+- **Estaciones en Multijugador:** en Historia y Solitario el invierno dura 10 días y las demás estaciones 5 (decidido). En Multijugador podrían seguir ese mismo ritmo o ser un calendario compartido por el servidor.
 
 ## Historia
 
