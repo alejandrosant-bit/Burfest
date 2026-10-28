@@ -61,12 +61,13 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
   - Interior: estufa de leña con tetera, banco de trabajo, cama, radio de onda corta, despensa, **panel de herramientas con siluetas pintadas** (y cada herramienta como objeto aparte para colgarla), mesa con mapa, sillón, TV vieja, gavetas y armarios con puertas que se abren, fotos enmarcadas, carta de despido enmarcada.
   - Generador de gasolina.
 - **Exterior:** pinos y árboles desnudos (con variantes con hojas para otras estaciones), rocas para picar, leñera, camioneta roja con nieve, columpio de llanta, postes de luz con cables, muelle de madera, bote varado, hueco de pesca en el hielo, cercas.
-- **Expediciones:** gasolinera (kit y utilería: surtidores, góndolas, caja registradora, auto abandonado); puesto médico de Isla Marbreich (camillas, cajas de suministros, carpa).
+- **Expediciones:** gasolinera (kit y utilería: surtidores, góndolas, caja registradora, auto abandonado); puesto de rescate de Isla Marbreich (camillas, cajas de suministros, tablero con cartel de "SE BUSCA", carpa).
 - **Armas:** cuchillo, machete, tubo, hacha de talar, bate con clavos, pico, escopeta.
 - **Objetos:** comida, agua, vendas, libros, manuales, notas, walkie-talkie, herramientas, materiales.
 - **Personajes (pose T, *low-poly*):**
   - **Anselmo:** viejo robusto, abrigo oscuro, gorro y bufanda roja.
-  - **Zombi caminante**, con ropa de ciudad desteñida y piel gris verdosa, y 2 o 3 variantes de color.
+  - **Zombi caminante ("los Ahogados")**: piel pálida azulada y amoratada, ropa de distintas épocas (de 1962, de pescador, de rescatista, de soldado) siempre mojada y con escarcha, con 2 o 3 variantes. Nada de ropa de ciudad moderna: no vienen de ninguna ciudad.
+  - **Aparición de Rosa:** figura de mujer con abrigo y bufanda roja, semitransparente o en silueta, para los sucesos paranormales.
   - **Perro:** mestizo, mediano, de pelaje café.
   - Para el perro, el esqueleto se hace con Rigify (cuadrúpedo), no con Mixamo.
 

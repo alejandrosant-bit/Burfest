@@ -14,7 +14,7 @@ Fuente común para los dos PCs. Si algo aquí contradice a `VISION.md`, manda es
 | Introducción (TV, radio, helicópteros, "3 días después") | Facciones y NPC hostiles con IA |
 | Los **primeros 5 días del invierno** | Primavera, verano y otoño jugables (sólo quedan sus datos preparados) |
 | Cabaña, bosque y sendero, muelle y lago helado | Bote navegable y mapa del lago gigante (llega con el deshielo) |
-| 2 zonas de expedición a pie por el hielo: **gasolinera** e **Isla Marbreich** (puesto médico abandonado) | Ciudades grandes, más pueblos |
+| 2 zonas de expedición a pie por el hielo: **gasolinera** e **Isla Marbreich** (puesto de rescate abandonado) | Ciudades grandes, más pueblos |
 | Compañero: **perro** | Compañero persona |
 | Radio de onda corta con misiones | Supervivientes en persona |
 | Brasas y tienda de muestra | Pagos reales, multijugador, Solitario |
@@ -112,10 +112,17 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 | **Bosque y sendero** | Caza, tala, piedra, recolección; por aquí llegan los zombis |
 | **Muelle y lago helado** | Pesca por el hueco del hielo; salida a pie hacia las expediciones |
 | **Gasolinera** (expedición) | Combustible para el generador, comida, piezas |
-| **Isla Marbreich** (expedición, por misión de radio) | Puesto médico abandonado: vendas, medicina, notas sobre el origen del virus |
+| **Isla Marbreich** (expedición, por misión de radio) | Puesto de rescate abandonado, con camillas y café servido: vendas, medicina y el cartel de "SE BUSCA" con la foto arrancada |
 
-- En las expediciones hay **libros y manuales** que suben las ramas de habilidad (Medicina, Caza, Construcción, Armería) y **notas** sobre el origen del virus.
+- En las expediciones hay **libros y manuales** que suben las ramas de habilidad (Medicina, Caza, Construcción, Armería) y **notas** que insinúan el misterio del lago (ver `HISTORIA.md`). Nunca se habla de virus: no hay apocalipsis, es el lago.
 - Ir y volver de una expedición toma tiempo del día; hay que volver antes de la noche.
+
+## Lo paranormal (en la demo)
+
+- **Sucesos al azar** (más de noche y con cada invierno repetido), definidos en datos: la silla de Rosa movida, el tocadiscos que suena solo, texto en el vidrio empañado, huellas descalzas del lago a la puerta, una figura sobre el hielo, la cabaña en ruinas en la TV, el perro ladrándole a un rincón vacío.
+- **Beber agua sin hervir:** además del riesgo de enfermarse, provoca **visiones** de unos segundos (los zombis se ven como personas, la cabaña aparece abandonada, se oye la voz de Rosa).
+- **El reloj de la cabaña** se para a las 3:12.
+- Ver la lista completa y las reglas en `HISTORIA.md`.
 
 ## Economía
 

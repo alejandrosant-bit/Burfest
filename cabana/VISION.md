@@ -86,7 +86,7 @@ Estas reglas valen en **todos los modos** (Historia, Solitario y Multijugador). 
 
 ## Historia
 
-Ver `HISTORIA.md`: historia con giros contada por la radio, los supervivientes y los objetos hallados. La introducción va en la demo.
+Ver `HISTORIA.md` (historia completa de misterio paranormal, estilo *From* y *Dark*: no hay apocalipsis, es una maldición del lago) y `BIBLIA_SECRETA.md` (la verdad, sólo para el equipo). Los lugares del lago gigante (pueblos, la represa, el pueblo hundido) son ecos vacíos del bolsillo del lago.
 
 ## Exploración en bote (fase posterior a la demo)
 
