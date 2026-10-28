@@ -64,10 +64,16 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
 - **Expediciones:** gasolinera (kit y utilería: surtidores, góndolas, caja registradora, auto abandonado); puesto de rescate de Isla Marbreich (camillas, cajas de suministros, tablero con cartel de "SE BUSCA", carpa).
 - **Armas:** cuchillo, machete, tubo, hacha de talar, bate con clavos, pico, escopeta, revólver, rifle de caza, arco, flechas, cartuchos y balas (como objetos), casquillos.
 - **Objetos:** comida, agua, vendas, libros, manuales, notas, walkie-talkie, herramientas, materiales.
+- **Personajes en 3D con calidad de cinemática:** se ven desde arriba al jugar, pero en las cinemáticas hay planos cercanos, así que los personajes principales llevan:
+  - **Cara expresiva:** ojos y párpados (parpadeo), cejas, boca con formas para hablar (*shape keys*: A, E, O, M/B, F) y expresiones (enojo, tristeza, miedo, llanto, sonrisa).
+  - **Manos con dedos** y un poco más de detalle en ropa y pelo, siempre en estilo *low-poly*.
+  - **Dentro del presupuesto** de `docs/DISENO_DEMO.md`; Godot genera automáticamente versiones más simples (LOD) para la vista de juego.
+  - Mixamo no anima la cara: después de traer el esqueleto, agrega en Blender los huesos de ojos y mandíbula y las *shape keys* de la cara, y anima las expresiones de las cinemáticas a mano.
 - **Personajes (pose T, *low-poly*):**
   - **Anselmo:** viejo robusto, abrigo oscuro, gorro y bufanda roja.
   - **Zombi caminante ("los Ahogados")**: piel pálida azulada y amoratada, ropa de distintas épocas (de 1962, de pescador, de rescatista, de soldado) siempre mojada y con escarcha, con 2 o 3 variantes. Nada de ropa de ciudad moderna: no vienen de ninguna ciudad.
   - **Zombi corredor** (más delgado, encorvado hacia adelante), **zombi hinchado** (enorme, inflado por el agua) y **zombi del hielo** (escarcha y carámbanos), con el mismo esqueleto humanoide.
+  - **Rosa** (mujer de unos 40 años, abrigo y bufanda roja) y **Clara niña** (10 años, gorro de lana con nieve), con cara expresiva, para el final y las apariciones; Rosa también en versión semitransparente o en silueta.
   - **Aparición de Rosa:** figura de mujer con abrigo y bufanda roja, semitransparente o en silueta, para los sucesos paranormales.
   - **Nevado, el perro:** mestizo mediano, blanco y lanudo (más una versión cachorro para el final).
   - Para el perro, el esqueleto se hace con Rigify (cuadrúpedo), no con Mixamo.

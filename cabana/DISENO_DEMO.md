@@ -188,7 +188,8 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 
   | Elemento | Límite |
   |---|---|
-  | Anselmo | hasta 4.000 triángulos |
+  | Anselmo (calidad de cinemática, con cara expresiva y manos con dedos) | hasta 8.000 triángulos; Godot genera versiones más simples (LOD) para la vista de juego |
+  | Rosa, Clara niña (sólo cinemáticas y apariciones) | hasta 7.000 triángulos |
   | Zombi | hasta 2.500 triángulos |
   | Perro | hasta 2.000 triángulos |
   | Objeto pequeño | 50 a 600 triángulos |
