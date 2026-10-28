@@ -67,6 +67,7 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
 - **Personajes (pose T, *low-poly*):**
   - **Anselmo:** viejo robusto, abrigo oscuro, gorro y bufanda roja.
   - **Zombi caminante ("los Ahogados")**: piel pálida azulada y amoratada, ropa de distintas épocas (de 1962, de pescador, de rescatista, de soldado) siempre mojada y con escarcha, con 2 o 3 variantes. Nada de ropa de ciudad moderna: no vienen de ninguna ciudad.
+  - **Zombi corredor** (más delgado, encorvado hacia adelante), **zombi hinchado** (enorme, inflado por el agua) y **zombi del hielo** (escarcha y carámbanos), con el mismo esqueleto humanoide.
   - **Aparición de Rosa:** figura de mujer con abrigo y bufanda roja, semitransparente o en silueta, para los sucesos paranormales.
   - **Nevado, el perro:** mestizo mediano, blanco y lanudo (más una versión cachorro para el final).
   - Para el perro, el esqueleto se hace con Rigify (cuadrúpedo), no con Mixamo.

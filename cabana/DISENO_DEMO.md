@@ -76,6 +76,22 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 - **Regla de la estufa:** mientras la estufa arde, los zombis no cruzan la puerta de la cabaña (golpean barricadas y ventanas, pero no entran). Si se apaga de noche, entran. Es una regla de la historia y el centro de la tensión nocturna: la leña es vida. Hay que probar el balance en el prototipo.
 - **La casa "se abre" (vista de maqueta):** al entrar desaparece el techo y bajan las paredes que dan a la cámara. Es igual en los edificios de las zonas de expedición.
 
+## Los zombis (el centro del juego)
+
+- **Es un juego de supervivencia contra zombis.** El misterio explica de dónde vienen (son los Ahogados del lago), pero en el juego, en la tienda y en el marketing **son zombis**: hordas, combate, defensa de la cabaña y tensión constante.
+- **Tipos en la demo:**
+
+  | Zombi | Aparece | Qué hace |
+  |---|---|---|
+  | **Caminante** | Desde el día 1 | Lento, aguanta golpes, llega en grupos. Golpea barricadas. |
+  | **Corredor** | Desde la noche 3 | Rápido y débil; obliga a usar el empujón y el bloqueo. |
+  | **Hinchado** | Noche 5 y raro de día | Lento y enorme. Al morir revienta en agua helada que enfría mucho a Anselmo y apaga el fuego cercano, así que no conviene matarlo junto a la estufa. |
+  | **Del hielo** | Noches en el lago | Sale de los huecos del hielo cuando Anselmo pesca o cruza. |
+
+- **Oleadas que crecen cada noche,** con hordas más grandes si se usa el generador. La quinta noche es la más dura de la demo.
+- **Reacciones con peso:** retroceden al recibir golpes, caen con el empujón, pierden extremidades con armas pesadas, y gimen y golpean puertas toda la noche.
+- **Juego completo:** más tipos, como el **Gritón** (llama a la horda), el **Soldado ahogado** con armadura (del helicóptero del Coronel) y jefes como **el Cura de Marbreich** en el pueblo hundido.
+
 ## Compañero: Nevado, el perro
 
 - **Comportamiento:**
