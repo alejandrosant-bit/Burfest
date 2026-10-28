@@ -117,6 +117,14 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 - En las expediciones hay **libros y manuales** que suben las ramas de habilidad (Medicina, Caza, Construcción, Armería) y **notas** que insinúan el misterio del lago (ver `HISTORIA.md`). Nunca se habla de virus: no hay apocalipsis, es el lago.
 - Ir y volver de una expedición toma tiempo del día; hay que volver antes de la noche.
 
+## Cinemáticas
+
+- **Todas se hacen dentro de Godot, con los mismos modelos del juego** (no videos pregrabados ni generados con IA): mismo estilo, archivos livianos, subtítulos traducibles y se pueden saltar.
+- **Herramientas:** un `AnimationPlayer` por escena que mueve la cámara, las luces, los personajes, el sonido y los subtítulos en una línea de tiempo; las actuaciones especiales (sentarse, levantarse, asomarse, llorar) se animan en Blender sobre la base de Mixamo.
+- **La emoción se cuenta con cámara, luz y sonido**, no con caras detalladas: planos cercanos, silencios, la luz de la estufa, la estática.
+- **En la demo:** la introducción y el cierre de la quinta noche. **En el juego completo:** la noche más larga, los finales "El regreso" y "Otro invierno", y escenas cortas por acto.
+- La historia se cuenta sobre todo jugando (radio, notas, sucesos), así que las cinemáticas son pocas y cortas.
+
 ## Lo paranormal (en la demo)
 
 - **Sucesos al azar** (más de noche y con cada invierno repetido), definidos en datos: la silla de Rosa movida, el tocadiscos que suena solo, texto en el vidrio empañado, huellas descalzas del lago a la puerta, una figura sobre el hielo, la cabaña en ruinas en la TV, el perro ladrándole a un rincón vacío.
