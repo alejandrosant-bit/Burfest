@@ -17,9 +17,9 @@
 | Personaje | Lo que el jugador sabe al principio |
 |---|---|
 | **Anselmo** | Viejo gruñón que vive solo hace 20 años en una cabaña junto al **Lago Marbreich**. Fue operario de la represa. Hierve el agua por costumbre, "porque el agua de este lago no es de fiar". Viudo: su esposa Rosa murió en el lago un invierno. |
-| **Clara** | Su hija. No se hablan desde la muerte de Rosa. Sus fotos están por toda la cabaña. |
+| **Clara** | Su hija. Tenía 10 años cuando murió Rosa; se fue a vivir con su tía y no se hablan desde entonces. Sus fotos están por toda la cabaña. |
 | **La locutora** | Una voz de mujer cansada por la radio. Sabe cosas que no debería saber. **Es Clara, pero Anselmo no lo sabe** (y el juego nunca lo confirma del todo hasta el final). |
-| **Tizón** (provisional) | El perro de Anselmo. Lo acompaña a todas partes y a veces le ladra a la nada. |
+| **Nevado** | El perro de Anselmo, blanco y lanudo. Lo acompaña a todas partes y a veces le ladra a la nada. |
 | **Rosa** | Sólo aparece en fotos, recuerdos y apariciones. |
 
 ## Lo que cree Anselmo y lo que el jugador va sospechando
@@ -105,6 +105,7 @@ La introducción (ver al final): la TV, la radio que se corta, los helicópteros
 - **El Coronel** y sus soldados controlan la represa. Su helicóptero está en el fondo del lago, aunque ellos dicen que "aterrizaron ayer". El Coronel cree que si **el último que llegó** muere junto al agua a las 3:12, el lago dejará ir a los demás. **Ese es Anselmo.**
 - **En la iglesia, los registros** muestran el escudo de los símbolos de los árboles: es el apellido de la familia de Rosa. También hablan de un invierno que se repitió en **1847**, mucho antes de la represa.
 - **Fin del acto:** la voz de la locutora se quiebra por primera vez: "No dejes que te lleven al agua... por favor". Anselmo jura que esa voz la conoce.
+- **Misiones personales:** ayudar a cada atrapado a soltar su culpa (don Efraín encuentra el bote de su hermano, Marta termina el turno que dejó a medias...). Al lograrlo, desaparece en paz y deja un regalo en la cabaña.
 
 ### Acto 4 · Otoño: "La compuerta"
 
@@ -114,11 +115,15 @@ La introducción (ver al final): la TV, la radio que se corta, los helicópteros
 - **El Coronel ataca** para llevar a Anselmo al agua antes del primer hielo.
 - **La última noche de otoño:** con el primer hielo, Anselmo debe elegir.
 
-### Los finales (el misterio queda abierto en todos)
+### Los finales
 
-1. **"El fondo":** Anselmo baja al agua, hasta la iglesia hundida, a pedirle perdón a Rosa. Por la radio, la locutora dice por fin "Papá, puedes irte". Silencio. Último plano: una mujer apaga una radio junto al agua y un perro mojado se sienta a su lado.
-2. **"Otro invierno":** Anselmo decide quedarse y vivir otro invierno, pero esta vez le habla a la radio: "Buenas noches, Clara". La voz responde, rota: "Buenas noches, papá". El ciclo sigue, pero ya no está solo.
-3. **Final secreto "La carta"** (se consigue encontrando todas las notas y sin haber bebido nunca agua sin hervir): Anselmo escribe una carta para Clara y la deja en la mesa. Plano final: la cabaña en ruinas, de día y sin nieve. Una mujer entra y encuentra la carta, con la letra de su padre y con fecha de hoy. **La radio se enciende sola: "¿Clara?".** Fin.
+1. **"El regreso" (el final verdadero):** si Anselmo recuperó sus recuerdos, ayudó a los otros atrapados y en la última noche **cierra la compuerta de la represa** en vez de entregarse al Coronel:
+   - Le habla a la radio: "Lo siento, hija. Por todo". Por primera vez, la voz responde: "Te perdono, papá".
+   - Fundido a blanco. **Anselmo despierta en el mismo sillón, 20 años antes.** Huele a comida: **Rosa está en la cocina.**
+   - Se abre la puerta y **entra corriendo Clara, de 10 años**, con nieve en el gorro, y **Nevado cachorro** detrás: "¡Papá, ven a ver lo que encontré en el bosque!".
+   - Anselmo llora. Último plano: **el reloj de la pared, que siempre se paraba a las 3:12, marca las 3:13 y sigue andando.**
+   - Nunca se explica si es una segunda oportunidad real o su paz final.
+2. **"Otro invierno" (final triste):** si se entrega al Coronel o llega a la última noche sin haber recuperado sus recuerdos, Anselmo cae al agua a las 3:12 y despierta otra vez en el sillón, viejo y solo. El invierno vuelve a empezar.
 
 ## Pistas para la comunidad
 

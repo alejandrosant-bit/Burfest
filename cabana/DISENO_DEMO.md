@@ -76,7 +76,7 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 - **Regla de la estufa:** mientras la estufa arde, los zombis no cruzan la puerta de la cabaña (golpean barricadas y ventanas, pero no entran). Si se apaga de noche, entran. Es una regla de la historia y el centro de la tensión nocturna: la leña es vida. Hay que probar el balance en el prototipo.
 - **La casa "se abre" (vista de maqueta):** al entrar desaparece el techo y bajan las paredes que dan a la cámara. Es igual en los edificios de las zonas de expedición.
 
-## Compañero: el perro
+## Compañero: Nevado, el perro
 
 - **Comportamiento:**
   - Sigue a Anselmo.

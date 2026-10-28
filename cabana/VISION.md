@@ -4,7 +4,7 @@ Juego en **inglés y español** desde el primer día.
 
 Documento de referencia para el juego completo. Lo que entra en la **demo v0.1** está en `DISENO_DEMO.md`, que manda si algo no coincide.
 
-**Decisiones generales:** el juego empieza en **invierno** (la estación más larga y difícil, 10 días; las demás duran 5); el modo Historia tiene **muerte permanente**; el compañero de Anselmo es un **perro**.
+**Decisiones generales:** el juego empieza en **invierno** (la estación más larga y difícil, 10 días; las demás duran 5); el modo Historia tiene **muerte permanente**; el compañero de Anselmo es un perro llamado **Nevado**.
 
 ## Menú principal
 
