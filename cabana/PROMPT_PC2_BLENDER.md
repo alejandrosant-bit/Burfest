@@ -62,7 +62,7 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
   - Generador de gasolina.
 - **Exterior:** pinos y árboles desnudos (con variantes con hojas para otras estaciones), rocas para picar, leñera, camioneta roja con nieve, columpio de llanta, postes de luz con cables, muelle de madera, bote varado, hueco de pesca en el hielo, cercas.
 - **Expediciones:** gasolinera (kit y utilería: surtidores, góndolas, caja registradora, auto abandonado); puesto de rescate de Isla Marbreich (camillas, cajas de suministros, tablero con cartel de "SE BUSCA", carpa).
-- **Armas:** cuchillo, machete, tubo, hacha de talar, bate con clavos, pico, escopeta.
+- **Armas:** cuchillo, machete, tubo, hacha de talar, bate con clavos, pico, escopeta, revólver, rifle de caza, arco, flechas, cartuchos y balas (como objetos), casquillos.
 - **Objetos:** comida, agua, vendas, libros, manuales, notas, walkie-talkie, herramientas, materiales.
 - **Personajes (pose T, *low-poly*):**
   - **Anselmo:** viejo robusto, abrigo oscuro, gorro y bufanda roja.
@@ -84,7 +84,8 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
 - **Nombres** (un `.glb` por personaje, con todas sus acciones):
   - **Anselmo:**
     - Locomoción: `Idle`, `Walk`, `Run`.
-    - Combate: `Atk_Light`, `Atk_Heavy`, `Push`, `Block_Hit`, `Shotgun_Fire`, `Shotgun_Reload`.
+    - Combate cuerpo a cuerpo: `Atk_Light`, `Atk_Heavy`, `Push`, `Block_Hit`.
+    - Disparo: `Aim_Pistol`, `Fire_Pistol`, `Reload_Pistol`, `Aim_Rifle`, `Fire_Rifle`, `Reload_Rifle`, `Fire_Shotgun`, `Reload_Shotgun`, `Draw_Bow`, `Fire_Bow`, y caminar apuntando (`Walk_Aim`).
     - Recibir daño: `Hit_React`, `Death`.
     - Tareas: `Search` (registrar), `Chop`, `Hammer`, `Drink`, `Eat`.
     - Introducción: `Sit_Idle`, `Stand_Up`, `Peek_Window`, `Shout`.

@@ -101,7 +101,7 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
   - Se le puede ordenar "quieto" o "ven".
 - **En la v0.1 no muere:** si lo hieren, se retira cojeando a la cabaña y vuelve al día siguiente. Esto mantiene el alcance chico y evita castigos injustos.
 
-## Combate cuerpo a cuerpo
+## Combate: mucha acción, disparos y cuerpo a cuerpo
 
 | Categoría | Ejemplos | Uso |
 |---|---|---|
@@ -109,7 +109,19 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 | **Pesada o contundente** | Hacha de talar, bate con clavos, pico | Mucho daño, derriba o desmiembra, pero tarda más en recuperarse |
 
 - **Acciones:** ataque ligero, ataque pesado, **empujón o patada** (control de multitudes, gasta resistencia) y **bloqueo** (absorbe un golpe con buen tiempo).
-- **Armas de fuego:** sólo la **escopeta** de la introducción, con muy pocos cartuchos y mucho ruido. Es el último recurso.
+- **Armas de fuego (protagonistas del combate, junto al cuerpo a cuerpo):**
+
+  | Arma | Dónde se consigue en la demo | Estilo |
+  |---|---|---|
+  | **Escopeta** de Anselmo | Desde la introducción | Dispersión, derriba grupos de cerca |
+  | **Revólver** | Registrando la cabaña | Rápido, preciso, cargador de 6 |
+  | **Rifle de caza** | Gasolinera | Mucho daño a distancia, atraviesa a dos zombis |
+  | **Arco** | Taller (fabricado) | Silencioso, flechas recuperables |
+
+- **Apuntar y disparar** con el ratón (o el stick derecho del mando): línea de mira en el suelo, retroceso, recarga con animación, casquillos, fogonazo que ilumina la nieve de noche y zombis que reaccionan a cada impacto (retroceden, caen, pierden extremidades).
+- **La munición no es escasa, pero tampoco infinita:** se encuentra en registros, expediciones y cajas, y se fabrica en el banco de trabajo con pólvora y casquillos (sube con la rama de Armería). El freno no es la escasez sino el **ruido**: cada disparo atrae más zombis, así que disparar mucho trae más acción.
+- **Disparar desde las ventanas de la cabaña:** las ventanas reforzadas sirven de tronera para defender de noche.
+- **Juego completo:** escopeta de dos cañones, carabina, ballesta, bengalas, cócteles molotov y armas raras o legendarias con efectos.
 - **Sensación de golpe:** pausa de impacto de 50 ms al conectar, sacudida de cámara en golpes pesados, partículas de sangre o nieve, sonido seco.
 - Las armas se desgastan y se reparan en el banco de trabajo.
 

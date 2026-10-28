@@ -78,7 +78,7 @@ res://
    - Cámara, movimiento y colisiones.
    - Cabaña provisional con la casa que se abre.
    - Cambio de zona cabaña ↔ bosque ↔ lago.
-2. **Combate:** ataque ligero y pesado, empujón, bloqueo, resistencia, armas cortas y pesadas con desgaste, sensación de golpe y zombi caminante básico.
+2. **Combate:** cuerpo a cuerpo (ataque ligero y pesado, empujón, bloqueo, armas con desgaste) y **disparos** (apuntar con el ratón o stick, escopeta, revólver, rifle, arco, retroceso, recarga, munición, ruido), resistencia, sensación de golpe y zombi caminante básico. Que se sienta con mucha acción.
 3. **Supervivencia:**
    - Temperatura, hambre y sed, salud al 60 % con vendas, sangrado.
    - Estufa (hervir agua, cocinar, bebidas calientes).
