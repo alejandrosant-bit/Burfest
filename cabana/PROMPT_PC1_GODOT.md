@@ -95,6 +95,8 @@ res://
 6. **Historia y expediciones:**
    - Introducción completa (ver `docs/HISTORIA.md`).
    - Radio de onda corta con boletines y Diario de Misiones.
+   - **Diario de Anselmo** (notas, dibujos, mapa y misiones; persiste entre partidas) y **cifrados** en boletines y notas, con sus soluciones en `docs/CIFRADOS.md`.
+   - Comentarios de humor seco de Anselmo (globos de texto cortos).
    - Walkie-talkie.
    - Expediciones a la gasolinera y a Isla Marbreich con libros, manuales y notas.
    - Ramas de habilidad.

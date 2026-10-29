@@ -32,6 +32,14 @@ Y cuando Anselmo muere, no muere. Despierta otra vez en su sillón, frente a la 
 
 Pero no todo se reinicia. En la mesa aparecen notas con su propia letra que no recuerda haber escrito. En la pared del cuarto hay una marca tallada por cada invierno que ha vivido. En los árboles hay símbolos que nadie más pudo haber hecho. Y las fotos de Clara en la cabaña cambian: cada vez que vuelve, ella sale un poco mayor.
 
+## El Diario
+
+Anselmo empieza a anotarlo todo en una libreta gastada: las reglas del lago, dibujos de las criaturas, mapas y teorías cada vez más locas, siempre con su humor de viejo cascarrabias ("Hoy uno de los mojados me pisó las zanahorias. Le cobraré el doble."). Lo raro es que en el Diario hay páginas con su letra que no recuerda haber escrito, de inviernos anteriores.
+
+Y el lago tiene otras rarezas, además de los Ahogados: el Viejo Lucio, un pez enorme que se ve pasar bajo el hielo; árboles que susurran frases con la voz de Anselmo; y, a veces, una mujer con bufanda roja parada en medio del lago.
+
+Cada boletín de la radio termina con una serie de números que parecen no significar nada. Los símbolos de los árboles, puestos en el mapa, forman una rueda alrededor del lago. Quien se tome el trabajo de descifrarlos encontrará pistas de la verdad. Nunca toda.
+
 ## La voz de la radio
 
 La única voz humana que le llega es la de una mujer que transmite por onda corta. Nunca dice su nombre. Sólo se la oye cerca del lago. Le da noticias, le habla de emergencias, lo manda a lugares: un puesto de rescate abandonado en una isla, una gasolinera vacía, una escuela. Sabe cosas que no debería saber. Una noche le dice: "Anselmo, apaga la radio antes de dormir. Siempre se te olvida". Él nunca le ha hablado.

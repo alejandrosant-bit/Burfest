@@ -63,6 +63,7 @@ Vas a hacer conmigo **todo el arte 3D de la demo v0.1 de *Old Man Winter*** en *
 - **Exterior:** pinos y árboles desnudos (con variantes con hojas para otras estaciones), rocas para picar, leñera, camioneta roja con nieve, columpio de llanta, postes de luz con cables, muelle de madera, bote varado, hueco de pesca en el hielo, cercas.
 - **Expediciones:** gasolinera (kit y utilería: surtidores, góndolas, caja registradora, auto abandonado); puesto de rescate de Isla Marbreich (camillas, cajas de suministros, tablero con cartel de "SE BUSCA", carpa).
 - **Armas:** cuchillo, machete, tubo, hacha de talar, bate con clavos, pico, escopeta, revólver, rifle de caza, arco, flechas, cartuchos y balas (como objetos), casquillos.
+- **Diario de Anselmo:** libreta de cuero gastada, abierta y cerrada, con hojas sueltas y recortes asomando.
 - **Objetos:** comida, agua, vendas, libros, manuales, notas, walkie-talkie, herramientas, materiales.
 - **Personajes en 3D con calidad de cinemática:** se ven desde arriba al jugar, pero en las cinemáticas hay planos cercanos, así que los personajes principales llevan:
   - **Cara expresiva:** ojos y párpados (parpadeo), cejas, boca con formas para hablar (*shape keys*: A, E, O, M/B, F) y expresiones (enojo, tristeza, miedo, llanto, sonrisa).
