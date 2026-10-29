@@ -75,4 +75,5 @@ Todos fueron tomados por el lago y están atados por una culpa. Cada uno oye en 
 2. **Las reglas del lago (`HISTORIA.md`) se cumplen siempre.**
 3. **Ningún texto del juego explica esta biblia directamente.** Sólo indicios: notas, fotos, fechas, frases de la radio, apariciones.
 4. **Nunca se dice en el juego** que la locutora es Clara (hasta el "Te perdono, papá"), ni que Anselmo cayó al hielo.
-5. **Tono adulto:** violencia con peso, culpa, duelo, soledad. El humor viene sólo del carácter gruñón de Anselmo.
+5. **Tono:** *Gravity Falls* para adultos. Violencia con peso, culpa y duelo, pero con humor seco (Anselmo y las rarezas de los atrapados), personajes excéntricos, mucho corazón familiar y códigos escondidos para la comunidad.
+6. **Los cifrados del juego** (boletines, árboles, notas, estática) usan códigos simples de descifrar (César, A1Z26, Atbash, el alfabeto de símbolos de la Rueda de Marbreich). Cada uno revela una pista de esta biblia, nunca la verdad completa. Lleva una lista de cada cifrado y su solución en `docs/CIFRADOS.md`.

@@ -153,6 +153,12 @@ Todos los valores van en recursos de datos para ajustarlos al probar.
 - **En la demo:** la introducción y el cierre de la quinta noche. **En el juego completo:** la noche más larga, los finales "El regreso" y "Otro invierno", y escenas cortas por acto.
 - La historia se cuenta sobre todo jugando (radio, notas, sucesos), así que las cinemáticas son pocas y cortas.
 
+## El Diario de Anselmo y los cifrados (en la demo)
+
+- **El Diario:** una pantalla con forma de libreta gastada que reúne las notas encontradas, los boletines de la radio, dibujos de los zombis y criaturas que se han visto, el mapa con las misiones y las notas con la letra de Anselmo de inviernos anteriores. Lo que va en el Diario persiste entre partidas.
+- **Cifrados:** cada boletín de la radio termina con una clave corta en números o letras, y hay 3 o 4 símbolos cifrados en árboles y notas. En la demo son fáciles (César y A1Z26) y revelan pistas pequeñas. Las soluciones se anotan en `docs/CIFRADOS.md`.
+- **Tono:** humor seco de Anselmo en sus comentarios (le habla a la radio, al perro y a los zombis), sin romper la tensión.
+
 ## Lo paranormal (en la demo)
 
 - **Sucesos al azar** (más de noche y con cada invierno repetido), definidos en datos: la silla de Rosa movida, el tocadiscos que suena solo, texto en el vidrio empañado, huellas descalzas del lago a la puerta, una figura sobre el hielo, la cabaña en ruinas en la TV, el perro ladrándole a un rincón vacío.

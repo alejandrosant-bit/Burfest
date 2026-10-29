@@ -4,6 +4,34 @@
 
 **La verdad completa está en `BIBLIA_SECRETA.md`**, sólo para el equipo. Todo texto, nota, boletín o aparición debe ser coherente con ella, pero revelar como máximo lo que indica esta página.
 
+## La vibra: *Gravity Falls* para adultos
+
+Mezcla de tres referencias:
+- **El misterio que engancha** de *From* y *Dark*.
+- **El encanto de *Gravity Falls*:**
+  - Un lugar raro y lleno de secretos.
+  - Un viejo gruñón con un pasado oculto (Anselmo es nuestro tío Stan).
+  - Personajes excéntricos.
+  - Humor seco en medio del miedo.
+  - Mucho corazón familiar.
+  - **Códigos y secretos escondidos para la comunidad.**
+
+En la práctica:
+- **Humor y corazón entre el miedo:**
+  - Los comentarios de Anselmo (le habla a la radio, al perro y a los zombis como si fueran vecinos molestos).
+  - Las rarezas de los atrapados (don Efraín le pone nombre a cada pez, Lucía habla en acertijos).
+  - El cariño con Nevado.
+
+  Nunca chistes tontos: el humor nace del carácter.
+- **El Diario de Anselmo:** una libreta gastada donde se juntan sus notas, dibujos de los Ahogados y de las criaturas raras del lago, mapas, recortes y teorías. Parte de lo escrito está en su letra de inviernos que no recuerda. Es nuestro "Diario 3".
+- **Cifrados escondidos:** cada boletín de la radio termina con una secuencia de números o letras en clave (como los créditos de *Gravity Falls*). Hay símbolos cifrados en los árboles, en las notas y en la estática de la TV. Descifrados, revelan pistas de la biblia secreta, sin resolver nunca todo.
+- **La Rueda de Marbreich:** los símbolos de los árboles forman, en el mapa, una rueda alrededor del lago (nuestra versión de la rueda de Bill Cipher). Cada símbolo se relaciona con un personaje o un suceso.
+- **Criaturas raras del lago, además de los zombis** (pocas y memorables):
+  - **El Viejo Lucio:** un pez enorme bajo el hielo.
+  - **Los Susurrantes:** árboles que repiten frases con la voz de Anselmo.
+  - **La Dama del Hielo:** la aparición de Rosa.
+- **La cabaña es acogedora y lo de afuera es inquietante:** madera cálida, la estufa, la radio y el perro, contra el bosque azul y la nieve.
+
 ## Cómo se cuenta
 
 - **La radio de onda corta:** una locutora misteriosa que nunca dice su nombre. Da noticias, consejos y "emergencias" que se vuelven misiones.
